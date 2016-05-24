@@ -59,6 +59,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="map" destination="nr4-hw-in4" id="YZw-Cl-ZEW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,15 +135,25 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7tm-nU-z0w">
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ya2-IH-zLM" firstAttribute="top" secondItem="7tm-nU-z0w" secondAttribute="bottom" id="7Nt-GJ-9Sg"/>
                             <constraint firstItem="QRq-kN-zYP" firstAttribute="top" secondItem="Qkv-l5-cAR" secondAttribute="bottom" id="7qd-M3-tMA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QRq-kN-zYP" secondAttribute="trailing" constant="-20" id="ApY-Qr-5Wn"/>
+                            <constraint firstItem="7tm-nU-z0w" firstAttribute="top" secondItem="QRq-kN-zYP" secondAttribute="bottom" id="Bjp-L7-APG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7tm-nU-z0w" secondAttribute="trailing" constant="-20" id="MK2-LE-T2C"/>
+                            <constraint firstItem="7tm-nU-z0w" firstAttribute="leading" secondItem="HWg-nP-aaB" secondAttribute="leadingMargin" constant="-20" id="pn7-NI-ZCt"/>
                             <constraint firstItem="QRq-kN-zYP" firstAttribute="leading" secondItem="HWg-nP-aaB" secondAttribute="leadingMargin" constant="-20" id="qf4-fg-mvb"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="mapView" destination="7tm-nU-z0w" id="a2R-Rq-RBZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohZ-pb-4QJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
