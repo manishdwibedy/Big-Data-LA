@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="656.5" y="632.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="VbQ-Zo-uyy">
             <objects>
-                <viewController id="YMz-yt-lan" sceneMemberID="viewController">
+                <viewController id="YMz-yt-lan" customClass="MapViewController" customModule="Big_Data_LA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qkv-l5-cAR"/>
                         <viewControllerLayoutGuide type="bottom" id="ya2-IH-zLM"/>
