@@ -37,6 +37,15 @@ class MapViewController: UIViewController {
         annotation.title = "Big Data LA 2016"
         annotation.subtitle = "West LA College"
         mapView.addAnnotation(annotation)
+        
+        let parking = MKPointAnnotation()
+        parking.coordinate = CLLocationCoordinate2D(
+            latitude: 34.002299,
+            longitude: -118.386121
+        )
+        parking.title = "Parking"
+        parking.subtitle = "Dummy"
+        mapView.addAnnotation(parking)
     }
 
     override func didReceiveMemoryWarning() {
