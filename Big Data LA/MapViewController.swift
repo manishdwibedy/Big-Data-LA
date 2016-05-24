@@ -30,6 +30,13 @@ class MapViewController: UIViewController {
         
         // Assigning the region to the mapView
         mapView.setRegion(region, animated: true)
+        
+        // Adding an annotation
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = location
+        annotation.title = "Big Data LA 2016"
+        annotation.subtitle = "West LA College"
+        mapView.addAnnotation(annotation)
     }
 
     override func didReceiveMemoryWarning() {
