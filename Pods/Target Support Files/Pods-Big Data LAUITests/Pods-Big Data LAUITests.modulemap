@@ -1,0 +1,6 @@
+framework module Pods_Big_Data_LAUITests {
+  umbrella header "Pods-Big Data LAUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
