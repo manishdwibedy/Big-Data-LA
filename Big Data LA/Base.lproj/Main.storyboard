@@ -33,10 +33,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr4-hw-in4">
                                         <rect key="frame" x="0.0" y="0.0" width="328" height="252"/>
                                         <state key="normal" title="Map"/>
+                                        <connections>
+                                            <segue destination="YMz-yt-lan" kind="show" id="zGr-QQ-nxD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hx6-SO-LGt">
                                         <rect key="frame" x="0.0" y="252" width="328" height="252"/>
                                         <state key="normal" title="Speakers"/>
+                                        <connections>
+                                            <segue destination="d09-Od-mkY" kind="show" id="1tG-35-3OH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -57,6 +63,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="171" y="271"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Erq-kJ-mwD">
+            <objects>
+                <viewController id="d09-Od-mkY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lFg-fu-NWR"/>
+                        <viewControllerLayoutGuide type="bottom" id="OBb-we-Ckb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kS6-cL-h8r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpd-KP-t6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="656.5" y="632.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VbQ-Zo-uyy">
+            <objects>
+                <viewController id="YMz-yt-lan" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qkv-l5-cAR"/>
+                        <viewControllerLayoutGuide type="bottom" id="ya2-IH-zLM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HWg-nP-aaB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QRq-kN-zYP">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9Hx-lq-ayJ"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Map" id="wpI-ML-dDy">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="zgE-yd-zpa"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QRq-kN-zYP" firstAttribute="top" secondItem="Qkv-l5-cAR" secondAttribute="bottom" id="7qd-M3-tMA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QRq-kN-zYP" secondAttribute="trailing" constant="-20" id="ApY-Qr-5Wn"/>
+                            <constraint firstItem="QRq-kN-zYP" firstAttribute="leading" secondItem="HWg-nP-aaB" secondAttribute="leadingMargin" constant="-20" id="qf4-fg-mvb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ohZ-pb-4QJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="656.5" y="-118.5"/>
         </scene>
     </scenes>
 </document>
