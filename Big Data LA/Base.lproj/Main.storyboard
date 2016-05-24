@@ -102,7 +102,11 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Map" id="wpI-ML-dDy">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="zgE-yd-zpa"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="zgE-yd-zpa">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="6JK-ID-Hed"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
