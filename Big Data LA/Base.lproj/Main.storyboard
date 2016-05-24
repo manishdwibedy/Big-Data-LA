@@ -18,22 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Big Data LA 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LC5-Xk-aua">
-                                <rect key="frame" x="20" y="273" width="280" height="21"/>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ftw-BK-6fc">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="rJ6-1E-WLX"/>
+                                    <constraint firstAttribute="height" constant="44" id="EoZ-1X-TnB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <items>
+                                    <navigationItem title="Big Data LA 2016" id="KU9-zy-n3a"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AUk-b5-ctl">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LC5-Xk-aua" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7G6-Mg-7OB"/>
-                            <constraint firstItem="LC5-Xk-aua" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Det-js-bkM"/>
-                            <constraint firstItem="LC5-Xk-aua" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QRC-R1-4X2"/>
-                            <constraint firstItem="LC5-Xk-aua" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pAO-ye-tFb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AUk-b5-ctl" secondAttribute="bottom" id="2JJ-Tg-s8N"/>
+                            <constraint firstItem="Ftw-BK-6fc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Gv8-tm-zb7"/>
+                            <constraint firstItem="Ftw-BK-6fc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="c6I-8N-cz7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AUk-b5-ctl" secondAttribute="trailing" constant="-20" id="het-e8-jbX"/>
+                            <constraint firstItem="AUk-b5-ctl" firstAttribute="top" secondItem="Ftw-BK-6fc" secondAttribute="bottom" id="kTY-32-fKA"/>
+                            <constraint firstItem="AUk-b5-ctl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="kVP-ub-6HX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ftw-BK-6fc" secondAttribute="trailing" constant="-20" id="tQV-Wq-uBA"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
