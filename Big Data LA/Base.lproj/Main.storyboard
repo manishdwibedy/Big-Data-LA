@@ -27,8 +27,18 @@
                                     <navigationItem title="Big Data LA 2016" id="KU9-zy-n3a"/>
                                 </items>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AUk-b5-ctl">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="AUk-b5-ctl">
+                                <rect key="frame" x="0.0" y="64" width="328" height="504"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr4-hw-in4">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="252"/>
+                                        <state key="normal" title="Map"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hx6-SO-LGt">
+                                        <rect key="frame" x="0.0" y="252" width="328" height="252"/>
+                                        <state key="normal" title="Speakers"/>
+                                    </button>
+                                </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
