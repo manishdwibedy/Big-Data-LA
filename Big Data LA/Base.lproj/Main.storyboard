@@ -82,7 +82,9 @@
                                     <constraint firstAttribute="height" constant="44" id="QOo-Nk-bOR"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Speakers" id="3KK-sz-9Je"/>
+                                    <navigationItem title="Speakers" id="3KK-sz-9Je">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="gWB-oN-9Nu"/>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
