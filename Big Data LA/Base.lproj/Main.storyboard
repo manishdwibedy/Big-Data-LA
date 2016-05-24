@@ -83,7 +83,11 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Speakers" id="3KK-sz-9Je">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="gWB-oN-9Nu"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="gWB-oN-9Nu">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="MMf-kq-MKO"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -143,4 +147,7 @@
             <point key="canvasLocation" x="656.5" y="-118.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MMf-kq-MKO"/>
+    </inferredMetricsTieBreakers>
 </document>
