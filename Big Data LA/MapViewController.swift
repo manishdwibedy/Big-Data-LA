@@ -20,8 +20,8 @@ class MapViewController: UIViewController {
         
         // Setting the location
         let location = CLLocationCoordinate2D(
-            latitude: 34.002395,
-            longitude: -118.386921
+            latitude: 34.004281,
+            longitude: -118.386846
         )
         
         // Setting the region
