@@ -11,7 +11,7 @@ import UIKit
 class SpeakersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // The speaker's list
-    let speakers = SpeakerData.speakers
+    let speakers = SpeakerData.getSpeakerInfo()
     
     @IBOutlet weak var speakerTable: UITableView!
     
@@ -56,8 +56,8 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
         
         let row = indexPath.row
-        cell.textLabel?.text = speakers[row]
-        
+        cell.textLabel?.text = speakers[row]["name"]
+        cell.detailTextLabel?.text = speakers[row]["title"]
         return cell
     }
     
