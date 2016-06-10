@@ -173,7 +173,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7tm-nU-z0w">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="7tm-nU-z0w">
                                 <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                             </mapView>
                         </subviews>
@@ -199,6 +199,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MMf-kq-MKO"/>
+        <segue reference="6JK-ID-Hed"/>
     </inferredMetricsTieBreakers>
 </document>
