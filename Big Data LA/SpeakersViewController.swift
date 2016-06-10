@@ -9,17 +9,16 @@
 import UIKit
 
 class SpeakersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    var speakers = [String]()
+    
+    // The speaker's list
+    let speakers = ["ANDY FENG", "GIL ELBAZ", "GWEN SHAPIRA",  "JAYADEV GOPINATH", "JEANNE HOLM", "PAUL ELLWOOD", "RAJIV MAHESWARAN", "REYNOLD XIN", "TOM HORAN"]
     @IBOutlet weak var speakerTable: UITableView!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
-        speakers = ["BMW","Audi","Volkswagen"]
-        
+        // Adding deletgate to the controller
         speakerTable.delegate = self
         speakerTable.dataSource = self
     }
@@ -40,18 +39,19 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     */
     
+    // Number of sections
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // 1
         return 1
     }
     
+    // Number of rows
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // 2
         return speakers.count
     }
     
-    
+    // Rendering individual cell
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->   UITableViewCell{
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
         
         let row = indexPath.row
@@ -60,6 +60,7 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
         return cell
     }
     
+    // Selecting individual cell
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         speakerTable.deselectRowAtIndexPath(indexPath, animated: true)
         
