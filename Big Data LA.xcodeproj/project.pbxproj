@@ -15,6 +15,7 @@
 		5B66AE5D1CF04883002E261B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B66AE5B1CF04883002E261B /* LaunchScreen.storyboard */; };
 		5B66AE681CF04883002E261B /* Big_Data_LATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B66AE671CF04883002E261B /* Big_Data_LATests.swift */; };
 		5B66AE731CF04883002E261B /* Big_Data_LAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B66AE721CF04883002E261B /* Big_Data_LAUITests.swift */; };
+		5BAB62C01D0B4179004B4088 /* SpeakersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB62BF1D0B4179004B4088 /* SpeakersViewController.swift */; };
 		5BFC940D1CF4D68D00C2DDBF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC940C1CF4D68D00C2DDBF /* MapViewController.swift */; };
 		68DF0678EBF8C0C2F41B3175 /* Pods_Big_Data_LATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2761D05F9F23902F37B50AD /* Pods_Big_Data_LATests.framework */; };
 		BBEA72CDD1BA296217B0628E /* Pods_Big_Data_LAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC0B2B5F6C4D7EB202CA328 /* Pods_Big_Data_LAUITests.framework */; };
@@ -55,6 +56,7 @@
 		5B66AE6E1CF04883002E261B /* Big Data LAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Big Data LAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B66AE721CF04883002E261B /* Big_Data_LAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Big_Data_LAUITests.swift; sourceTree = "<group>"; };
 		5B66AE741CF04883002E261B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BAB62BF1D0B4179004B4088 /* SpeakersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersViewController.swift; sourceTree = "<group>"; };
 		5BFC940C1CF4D68D00C2DDBF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		64E586F9BCA8C181D2FF18BC /* Pods-Big Data LAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Big Data LAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Big Data LAUITests/Pods-Big Data LAUITests.release.xcconfig"; sourceTree = "<group>"; };
 		657FE92BBDA037EEF1431EA7 /* Pods-Big Data LA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Big Data LA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Big Data LA/Pods-Big Data LA.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				5B66AE5E1CF04883002E261B /* Info.plist */,
 				5B66AE561CF04883002E261B /* Big_Data_LA.xcdatamodeld */,
 				5BFC940C1CF4D68D00C2DDBF /* MapViewController.swift */,
+				5BAB62BF1D0B4179004B4088 /* SpeakersViewController.swift */,
 			);
 			path = "Big Data LA";
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				5B66AE521CF04883002E261B /* ViewController.swift in Sources */,
 				5B66AE501CF04883002E261B /* AppDelegate.swift in Sources */,
 				5B66AE581CF04883002E261B /* Big_Data_LA.xcdatamodeld in Sources */,
+				5BAB62C01D0B4179004B4088 /* SpeakersViewController.swift in Sources */,
 				5BFC940D1CF4D68D00C2DDBF /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
