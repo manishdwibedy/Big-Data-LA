@@ -11,7 +11,8 @@ import UIKit
 class SpeakersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // The speaker's list
-    let speakers = ["ANDY FENG", "GIL ELBAZ", "GWEN SHAPIRA",  "JAYADEV GOPINATH", "JEANNE HOLM", "PAUL ELLWOOD", "RAJIV MAHESWARAN", "REYNOLD XIN", "TOM HORAN"]
+    let speakers = SpeakerData.speakers
+    
     @IBOutlet weak var speakerTable: UITableView!
     
     override func viewDidLoad() {
