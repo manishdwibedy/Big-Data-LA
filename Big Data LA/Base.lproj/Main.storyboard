@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="171" y="271"/>
         </scene>
-        <!--View Controller-->
+        <!--Speakers View Controller-->
         <scene sceneID="Erq-kJ-mwD">
             <objects>
-                <viewController id="d09-Od-mkY" sceneMemberID="viewController">
+                <viewController id="d09-Od-mkY" customClass="SpeakersViewController" customModule="Big_Data_LA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lFg-fu-NWR"/>
                         <viewControllerLayoutGuide type="bottom" id="OBb-we-Ckb"/>

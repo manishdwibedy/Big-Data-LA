@@ -9,11 +9,14 @@
 import UIKit
 
 class SpeakersViewController: UIViewController {
-
+    var speakers = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        speakers = ["BMW","Audi","Volkswagen"]
     }
 
     override func didReceiveMemoryWarning() {
