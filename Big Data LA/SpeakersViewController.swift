@@ -8,15 +8,20 @@
 
 import UIKit
 
-class SpeakersViewController: UIViewController {
+class SpeakersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var speakers = [String]()
+    @IBOutlet weak var speakerTable: UITableView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         speakers = ["BMW","Audi","Volkswagen"]
+        
+        speakerTable.delegate = self
+        speakerTable.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,5 +39,32 @@ class SpeakersViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // 1
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // 2
+        return speakers.count
+    }
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->   UITableViewCell{
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        
+        let row = indexPath.row
+        cell.textLabel?.text = speakers[row]
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        speakerTable.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        let row = indexPath.row
+        print(speakers[row])
+    }
 
 }
