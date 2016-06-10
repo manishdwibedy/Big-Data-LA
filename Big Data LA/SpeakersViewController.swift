@@ -66,7 +66,13 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
         speakerTable.deselectRowAtIndexPath(indexPath, animated: true)
         
         let row = indexPath.row
-        print(speakers[row])
+        let speaker = speakers[row]
+        
+        let alertController = UIAlertController(title: speaker["name"], message:
+            speaker["about"], preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 
 }
