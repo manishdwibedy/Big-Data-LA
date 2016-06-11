@@ -180,17 +180,39 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Speaker Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGZ-KJ-Z1L">
+                                <rect key="frame" x="20" y="123" width="335" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3l-fh-SH4">
+                                <rect key="frame" x="20" y="174" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="RGZ-KJ-Z1L" firstAttribute="leading" secondItem="UIn-oH-agi" secondAttribute="leadingMargin" id="4xW-GA-qiO"/>
+                            <constraint firstItem="RGZ-KJ-Z1L" firstAttribute="centerX" secondItem="UIn-oH-agi" secondAttribute="centerX" id="BnF-Cf-smx"/>
+                            <constraint firstItem="RGZ-KJ-Z1L" firstAttribute="trailing" secondItem="UIn-oH-agi" secondAttribute="trailingMargin" id="Bry-mr-NMu"/>
+                            <constraint firstItem="RGZ-KJ-Z1L" firstAttribute="top" secondItem="RCd-kQ-Q66" secondAttribute="bottom" constant="51" id="Cpc-ux-ysN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RCd-kQ-Q66" secondAttribute="trailing" constant="-20" id="LJO-47-srB"/>
+                            <constraint firstItem="y3l-fh-SH4" firstAttribute="leading" secondItem="UIn-oH-agi" secondAttribute="leadingMargin" id="MR2-sf-iTb"/>
+                            <constraint firstItem="y3l-fh-SH4" firstAttribute="centerX" secondItem="UIn-oH-agi" secondAttribute="centerX" id="NxY-hW-3uE"/>
+                            <constraint firstItem="y3l-fh-SH4" firstAttribute="top" secondItem="RGZ-KJ-Z1L" secondAttribute="bottom" constant="15" id="bZt-mQ-h1D"/>
                             <constraint firstItem="RCd-kQ-Q66" firstAttribute="top" secondItem="IG3-Fk-FOb" secondAttribute="bottom" constant="8" id="tDb-PF-d6j"/>
                             <constraint firstItem="RCd-kQ-Q66" firstAttribute="leading" secondItem="UIn-oH-agi" secondAttribute="leadingMargin" constant="-20" id="wyy-F0-acH"/>
+                            <constraint firstItem="y3l-fh-SH4" firstAttribute="trailing" secondItem="UIn-oH-agi" secondAttribute="trailingMargin" id="zeE-ni-cPI"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="speakerTitle" destination="CAh-kn-szr" id="bjR-Ol-zSV"/>
+                        <outlet property="navigationBar" destination="CAh-kn-szr" id="Np0-PI-Ev7"/>
+                        <outlet property="speakerName" destination="RGZ-KJ-Z1L" id="WnZ-EJ-Ceb"/>
+                        <outlet property="speakerTitle" destination="y3l-fh-SH4" id="FfJ-RH-3MU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h1k-to-W5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
