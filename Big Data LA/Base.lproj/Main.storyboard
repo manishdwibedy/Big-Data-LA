@@ -83,7 +83,8 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Speakers" id="3KK-sz-9Je">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="gWB-oN-9Nu">
+                                        <barButtonItem key="leftBarButtonItem" image="back-button" width="40" style="done" id="gWB-oN-9Nu">
+                                            <inset key="imageInsets" minX="5" minY="10" maxX="5" maxY="10"/>
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="MMf-kq-MKO"/>
                                             </connections>
@@ -170,7 +171,8 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Title" id="CAh-kn-szr">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="jHE-2G-e3E">
+                                        <barButtonItem key="leftBarButtonItem" image="back-button" width="40" style="plain" id="jHE-2G-e3E">
+                                            <inset key="imageInsets" minX="5" minY="10" maxX="5" maxY="10"/>
                                             <connections>
                                                 <segue destination="d09-Od-mkY" kind="show" id="AfN-RI-f3x"/>
                                             </connections>
@@ -214,7 +216,8 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Map" id="wpI-ML-dDy">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="zgE-yd-zpa">
+                                        <barButtonItem key="leftBarButtonItem" image="back-button" width="40" id="zgE-yd-zpa">
+                                            <inset key="imageInsets" minX="5" minY="10" maxX="5" maxY="10"/>
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="6JK-ID-Hed"/>
                                             </connections>
@@ -248,10 +251,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back-button" width="25" height="41"/>
         <image name="dummy-image" width="298" height="282"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="AfN-RI-f3x"/>
-        <segue reference="MMf-kq-MKO"/>
+        <segue reference="6JK-ID-Hed"/>
     </inferredMetricsTieBreakers>
 </document>
