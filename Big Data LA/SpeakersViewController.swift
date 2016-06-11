@@ -80,8 +80,12 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "showSpeakerDetails") {
-            let svc = segue.destinationViewController as! SpeakerDetailViewController;
-            svc.speaker = self.currentSpeaker
+            let svc = segue.destinationViewController as! UITabBarController;
+            let detailViewController = svc.viewControllers![0] as! SpeakerDetailViewController
+            print(svc.viewControllers)
+            detailViewController.speaker = self.currentSpeaker
+            print(detailViewController.speaker)
+            print()
             
         }
     }

@@ -11,14 +11,13 @@ import UIKit
 class SpeakerDetailViewController: UIViewController {
     var speaker: [String:String] = [:]
 
-    @IBOutlet weak var speakerTitle: UILabel!
-    @IBOutlet weak var speakerName: UILabel!
-    @IBOutlet weak var navigationBar: UINavigationItem!
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.title = self.speaker["name"]
-        speakerName.text = self.speaker["name"]
-        speakerTitle.text = self.speaker["title"]
+        navigationBar.topItem?.title = self.speaker["name"]
+//        speakerName.text = self.speaker["name"]
+//        speakerTitle.text = self.speaker["title"]
     }
     
     override func didReceiveMemoryWarning() {

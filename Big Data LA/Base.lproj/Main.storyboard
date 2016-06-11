@@ -145,7 +145,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="speakerTable" destination="XDL-nY-FID" id="g3h-An-Qsl"/>
-                        <segue destination="qyB-sN-G32" kind="presentation" identifier="showSpeakerDetails" modalTransitionStyle="crossDissolve" id="pXs-Vs-w0s"/>
+                        <segue destination="d55-Vp-gs1" kind="presentation" identifier="showSpeakerDetails" modalTransitionStyle="flipHorizontal" id="l3V-73-uGz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpd-KP-t6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -240,15 +240,89 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="navigationBar" destination="CAh-kn-szr" id="Np0-PI-Ev7"/>
-                        <outlet property="speakerName" destination="RGZ-KJ-Z1L" id="WnZ-EJ-Ceb"/>
-                        <outlet property="speakerTitle" destination="y3l-fh-SH4" id="FfJ-RH-3MU"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h1k-to-W5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1180.5" y="632.5"/>
+        </scene>
+        <!--Talks-->
+        <scene sceneID="Ez4-LH-s3G">
+            <objects>
+                <viewController title="Talks" id="kek-c1-Cwf" customClass="UITabBarController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jya-Rm-wKU"/>
+                        <viewControllerLayoutGuide type="bottom" id="slC-Ys-j5n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vr0-2q-RqP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Oyy-aI-DRX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cn5-4F-Hpz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600" y="963"/>
+        </scene>
+        <!--About Speaker-->
+        <scene sceneID="d1N-kk-WpH">
+            <objects>
+                <viewController title="About Speaker" id="f6V-jL-TXp" customClass="SpeakerDetailViewController" customModule="Big_Data_LA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dc7-ep-yRh"/>
+                        <viewControllerLayoutGuide type="bottom" id="dQq-wa-n22"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G0a-r5-GzJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6kJ-b2-D6p">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1Nb-4D-sx3"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="JOW-cu-G3o">
+                                        <barButtonItem key="leftBarButtonItem" image="back-button" id="4eh-qs-cY3">
+                                            <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6kJ-b2-D6p" firstAttribute="top" secondItem="Dc7-ep-yRh" secondAttribute="bottom" id="D1y-U7-Amd"/>
+                            <constraint firstItem="6kJ-b2-D6p" firstAttribute="leading" secondItem="G0a-r5-GzJ" secondAttribute="leadingMargin" constant="-20" id="KsI-8W-9Dk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6kJ-b2-D6p" secondAttribute="trailing" constant="-20" id="OZV-Lh-2M0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="FzK-f8-i5k"/>
+                    <connections>
+                        <outlet property="navigationBar" destination="6kJ-b2-D6p" id="FN6-XP-FEE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S8o-iE-pnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600" y="303"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wvN-TG-ufv">
+            <objects>
+                <tabBarController id="d55-Vp-gs1" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="vTB-wj-Q6y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="f6V-jL-TXp" kind="relationship" relationship="viewControllers" id="WKa-by-dlT"/>
+                        <segue destination="kek-c1-Cwf" kind="relationship" relationship="viewControllers" id="VOz-Ay-81Q"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5f-I4-tUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="635"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="VbQ-Zo-uyy">
@@ -310,7 +384,7 @@
         <image name="talks" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MMf-kq-MKO"/>
+        <segue reference="6JK-ID-Hed"/>
         <segue reference="AfN-RI-f3x"/>
     </inferredMetricsTieBreakers>
 </document>
