@@ -189,6 +189,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="speakerTitle" destination="CAh-kn-szr" id="bjR-Ol-zSV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h1k-to-W5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
