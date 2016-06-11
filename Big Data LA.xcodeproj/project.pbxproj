@@ -15,6 +15,7 @@
 		5B66AE5D1CF04883002E261B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B66AE5B1CF04883002E261B /* LaunchScreen.storyboard */; };
 		5B66AE681CF04883002E261B /* Big_Data_LATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B66AE671CF04883002E261B /* Big_Data_LATests.swift */; };
 		5B66AE731CF04883002E261B /* Big_Data_LAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B66AE721CF04883002E261B /* Big_Data_LAUITests.swift */; };
+		5BA8772D1D0CDC17002B915A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5BA8772C1D0CDC17002B915A /* .gitignore */; };
 		5BAB62C01D0B4179004B4088 /* SpeakersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB62BF1D0B4179004B4088 /* SpeakersViewController.swift */; };
 		5BAB62C41D0B6EAD004B4088 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB62C31D0B6EAD004B4088 /* constants.swift */; };
 		5BAB62C81D0BA236004B4088 /* SpeakerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB62C71D0BA236004B4088 /* SpeakerDetailViewController.swift */; };
@@ -59,6 +60,7 @@
 		5B66AE6E1CF04883002E261B /* Big Data LAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Big Data LAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B66AE721CF04883002E261B /* Big_Data_LAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Big_Data_LAUITests.swift; sourceTree = "<group>"; };
 		5B66AE741CF04883002E261B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BA8772C1D0CDC17002B915A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5BAB62BF1D0B4179004B4088 /* SpeakersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersViewController.swift; sourceTree = "<group>"; };
 		5BAB62C31D0B6EAD004B4088 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		5BAB62C71D0BA236004B4088 /* SpeakerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeakerDetailViewController.swift; path = ../SpeakerDetailViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		5B66AE431CF04883002E261B = {
 			isa = PBXGroup;
 			children = (
+				5BA8772C1D0CDC17002B915A /* .gitignore */,
 				5B66AE4E1CF04883002E261B /* Big Data LA */,
 				5B66AE661CF04883002E261B /* Big Data LATests */,
 				5B66AE711CF04883002E261B /* Big Data LAUITests */,
@@ -296,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA8772D1D0CDC17002B915A /* .gitignore in Resources */,
 				5B66AE5D1CF04883002E261B /* LaunchScreen.storyboard in Resources */,
 				5B66AE5A1CF04883002E261B /* Assets.xcassets in Resources */,
 				5B66AE551CF04883002E261B /* Main.storyboard in Resources */,
