@@ -7,6 +7,7 @@ target 'Big Data LA' do
 
   # Pods for Big Data LA
   pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+  pod 'Alamofire', '~> 3.4'
 
   target 'Big Data LATests' do
     inherit! :search_paths
