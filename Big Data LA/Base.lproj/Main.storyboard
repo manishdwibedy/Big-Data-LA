@@ -152,99 +152,6 @@
             </objects>
             <point key="canvasLocation" x="656.5" y="632.5"/>
         </scene>
-        <!--Speaker Detail View Controller-->
-        <scene sceneID="IAL-0F-ngR">
-            <objects>
-                <viewController id="qyB-sN-G32" customClass="SpeakerDetailViewController" customModule="Big_Data_LA" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IG3-Fk-FOb"/>
-                        <viewControllerLayoutGuide type="bottom" id="tga-yb-SS5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="UIn-oH-agi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCd-kQ-Q66">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="yav-iu-i9i"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Title" id="CAh-kn-szr">
-                                        <barButtonItem key="leftBarButtonItem" image="back-button" width="40" style="plain" id="jHE-2G-e3E">
-                                            <inset key="imageInsets" minX="5" minY="10" maxX="5" maxY="10"/>
-                                            <connections>
-                                                <segue destination="d09-Od-mkY" kind="show" id="AfN-RI-f3x"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3l-fh-SH4">
-                                <rect key="frame" x="20" y="244" width="335" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="y0s-M5-Uaa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dummy-image" translatesAutoresizingMaskIntoConstraints="NO" id="v5c-gY-JYn">
-                                <rect key="frame" x="137" y="87" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="ONF-27-zff"/>
-                                    <constraint firstAttribute="width" constant="100" id="Rg0-k8-L1o"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Speaker Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGZ-KJ-Z1L">
-                                <rect key="frame" x="20" y="200" width="335" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="F0o-mu-bH6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tabBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fyd-fg-GQ9">
-                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="5A4-G3-Kts"/>
-                                </constraints>
-                                <items>
-                                    <tabBarItem title="About" image="about" id="HFx-Pq-f79">
-                                        <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                                    </tabBarItem>
-                                    <tabBarItem title="Talks" image="talks" id="gVG-KM-q3y">
-                                        <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                                    </tabBarItem>
-                                </items>
-                            </tabBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="RGZ-KJ-Z1L" firstAttribute="leading" secondItem="UIn-oH-agi" secondAttribute="leadingMargin" id="7i3-ht-7Az"/>
-                            <constraint firstItem="fyd-fg-GQ9" firstAttribute="leading" secondItem="UIn-oH-agi" secondAttribute="leadingMargin" constant="-20" id="97C-Jg-FuK"/>
-                            <constraint firstItem="y3l-fh-SH4" firstAttribute="trailing" secondItem="UIn-oH-agi" secondAttribute="trailingMargin" id="FBc-q7-TqP"/>
-                            <constraint firstItem="v5c-gY-JYn" firstAttribute="top" secondItem="RCd-kQ-Q66" secondAttribute="bottom" constant="15" id="GvJ-yr-AWX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fyd-fg-GQ9" secondAttribute="trailing" constant="-20" id="J5A-8v-31N"/>
-                            <constraint firstItem="RGZ-KJ-Z1L" firstAttribute="top" secondItem="v5c-gY-JYn" secondAttribute="bottom" constant="15" id="S7v-Dp-8h3"/>
-                            <constraint firstItem="tga-yb-SS5" firstAttribute="top" secondItem="fyd-fg-GQ9" secondAttribute="bottom" id="SJC-Wj-cc3"/>
-                            <constraint firstItem="RGZ-KJ-Z1L" firstAttribute="trailing" secondItem="UIn-oH-agi" secondAttribute="trailingMargin" id="Tng-qg-MCP"/>
-                            <constraint firstItem="y3l-fh-SH4" firstAttribute="leading" secondItem="UIn-oH-agi" secondAttribute="leadingMargin" id="Ucg-yI-g3H"/>
-                            <constraint firstItem="y3l-fh-SH4" firstAttribute="top" secondItem="RGZ-KJ-Z1L" secondAttribute="bottom" constant="8" id="WHE-de-pDx"/>
-                            <constraint firstItem="RCd-kQ-Q66" firstAttribute="leading" secondItem="UIn-oH-agi" secondAttribute="leadingMargin" constant="-20" id="Z9j-TK-GeN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="RCd-kQ-Q66" secondAttribute="trailing" constant="-20" id="csR-xh-PZL"/>
-                            <constraint firstItem="RCd-kQ-Q66" firstAttribute="top" secondItem="IG3-Fk-FOb" secondAttribute="bottom" id="hi0-9q-7IN"/>
-                            <constraint firstItem="v5c-gY-JYn" firstAttribute="centerX" secondItem="UIn-oH-agi" secondAttribute="centerX" id="pY5-pc-xbE"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h1k-to-W5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1180.5" y="632.5"/>
-        </scene>
         <!--Talks-->
         <scene sceneID="Ez4-LH-s3G">
             <objects>
@@ -262,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cn5-4F-Hpz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2600" y="963"/>
+            <point key="canvasLocation" x="1627.5" y="1062.5"/>
         </scene>
         <!--About Speaker-->
         <scene sceneID="d1N-kk-WpH">
@@ -285,6 +192,9 @@
                                     <navigationItem title="Title" id="JOW-cu-G3o">
                                         <barButtonItem key="leftBarButtonItem" image="back-button" id="4eh-qs-cY3">
                                             <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                            <connections>
+                                                <segue destination="d09-Od-mkY" kind="show" id="HQT-Fh-IN4"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -351,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S8o-iE-pnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2599.5" y="302.5"/>
+            <point key="canvasLocation" x="1627.5" y="402.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wvN-TG-ufv">
@@ -369,7 +279,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5f-I4-tUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1780" y="635"/>
+            <point key="canvasLocation" x="1131.5" y="632.5"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="VbQ-Zo-uyy">
@@ -425,13 +335,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="about" width="50" height="50"/>
         <image name="back-button" width="25" height="41"/>
         <image name="dummy-image" width="298" height="282"/>
-        <image name="talks" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6JK-ID-Hed"/>
-        <segue reference="AfN-RI-f3x"/>
+        <segue reference="MMf-kq-MKO"/>
+        <segue reference="HQT-Fh-IN4"/>
     </inferredMetricsTieBreakers>
 </document>
