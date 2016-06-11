@@ -203,7 +203,7 @@
                             <constraint firstItem="y3l-fh-SH4" firstAttribute="leading" secondItem="UIn-oH-agi" secondAttribute="leadingMargin" id="MR2-sf-iTb"/>
                             <constraint firstItem="y3l-fh-SH4" firstAttribute="centerX" secondItem="UIn-oH-agi" secondAttribute="centerX" id="NxY-hW-3uE"/>
                             <constraint firstItem="y3l-fh-SH4" firstAttribute="top" secondItem="RGZ-KJ-Z1L" secondAttribute="bottom" constant="15" id="bZt-mQ-h1D"/>
-                            <constraint firstItem="RCd-kQ-Q66" firstAttribute="top" secondItem="IG3-Fk-FOb" secondAttribute="bottom" constant="8" id="tDb-PF-d6j"/>
+                            <constraint firstItem="RCd-kQ-Q66" firstAttribute="top" secondItem="IG3-Fk-FOb" secondAttribute="bottom" id="tDb-PF-d6j"/>
                             <constraint firstItem="RCd-kQ-Q66" firstAttribute="leading" secondItem="UIn-oH-agi" secondAttribute="leadingMargin" constant="-20" id="wyy-F0-acH"/>
                             <constraint firstItem="y3l-fh-SH4" firstAttribute="trailing" secondItem="UIn-oH-agi" secondAttribute="trailingMargin" id="zeE-ni-cPI"/>
                         </constraints>
@@ -277,7 +277,7 @@
         <image name="dummy-image" width="298" height="282"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="MMf-kq-MKO"/>
         <segue reference="AfN-RI-f3x"/>
-        <segue reference="6JK-ID-Hed"/>
     </inferredMetricsTieBreakers>
 </document>
