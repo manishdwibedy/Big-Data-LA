@@ -165,7 +165,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Oyy-aI-DRX"/>
+                    <tabBarItem key="tabBarItem" title="Talks" image="talks" id="Oyy-aI-DRX">
+                        <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cn5-4F-Hpz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -251,7 +253,9 @@
                             <constraint firstItem="yXK-Hp-EqT" firstAttribute="top" secondItem="6kJ-b2-D6p" secondAttribute="bottom" constant="10" id="yuH-YL-KpO"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="FzK-f8-i5k"/>
+                    <tabBarItem key="tabBarItem" title="About" image="about" id="FzK-f8-i5k">
+                        <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="navigationBar" destination="6kJ-b2-D6p" id="FN6-XP-FEE"/>
                         <outlet property="speakerAbout" destination="4iN-zW-ofY" id="ahh-XC-2NE"/>
@@ -267,6 +271,9 @@
         <scene sceneID="wvN-TG-ufv">
             <objects>
                 <tabBarController id="d55-Vp-gs1" sceneMemberID="viewController">
+                    <keyCommands>
+                        <keyCommand/>
+                    </keyCommands>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="vTB-wj-Q6y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -335,8 +342,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="about" width="50" height="50"/>
         <image name="back-button" width="25" height="41"/>
         <image name="dummy-image" width="298" height="282"/>
+        <image name="talks" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MMf-kq-MKO"/>
