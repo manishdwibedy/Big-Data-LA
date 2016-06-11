@@ -344,6 +344,7 @@
                     <tabBarItem key="tabBarItem" title="Item 1" id="FzK-f8-i5k"/>
                     <connections>
                         <outlet property="navigationBar" destination="6kJ-b2-D6p" id="FN6-XP-FEE"/>
+                        <outlet property="speakerAbout" destination="4iN-zW-ofY" id="ahh-XC-2NE"/>
                         <outlet property="speakerName" destination="aN2-Mo-qnl" id="jOF-Fs-3AF"/>
                         <outlet property="speakerTitle" destination="dFV-Sq-0i1" id="Pk1-dN-EX2"/>
                     </connections>
