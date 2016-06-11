@@ -123,7 +123,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="qyB-sN-G32" kind="show" id="lsH-YB-elt"/>
+                                            <segue destination="qyB-sN-G32" kind="show" identifier="showSpeakerDetails" id="cHa-IZ-9ig"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -250,7 +250,7 @@
         <image name="dummy-image" width="298" height="282"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MMf-kq-MKO"/>
         <segue reference="AfN-RI-f3x"/>
+        <segue reference="MMf-kq-MKO"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -68,7 +68,7 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
         let row = indexPath.row
         let speaker = speakers[row]
         
-        print("Selected the speaker : " + speaker["name"]!)
+        print("Selected the speaker :" + speaker["name"]!)
     }
 
 }
