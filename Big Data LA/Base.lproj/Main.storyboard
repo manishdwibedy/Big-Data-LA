@@ -172,7 +172,11 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Title" id="CAh-kn-szr">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="jHE-2G-e3E"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="jHE-2G-e3E">
+                                            <connections>
+                                                <segue destination="d09-Od-mkY" kind="show" id="AfN-RI-f3x"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -247,5 +251,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MMf-kq-MKO"/>
+        <segue reference="AfN-RI-f3x"/>
     </inferredMetricsTieBreakers>
 </document>
