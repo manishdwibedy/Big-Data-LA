@@ -153,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="656.5" y="632.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Speaker Detail View Controller-->
         <scene sceneID="IAL-0F-ngR">
             <objects>
-                <viewController id="qyB-sN-G32" sceneMemberID="viewController">
+                <viewController id="qyB-sN-G32" customClass="SpeakerDetailViewController" customModule="Big_Data_LA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IG3-Fk-FOb"/>
                         <viewControllerLayoutGuide type="bottom" id="tga-yb-SS5"/>
