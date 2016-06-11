@@ -10,13 +10,6 @@ import Foundation
 
 class SpeakerData {
     
-    static let speakers = ["ANDY FENG", "GIL ELBAZ", "GWEN SHAPIRA",  "JAYADEV GOPINATH", "JEANNE HOLM", "PAUL ELLWOOD", "RAJIV MAHESWARAN", "REYNOLD XIN", "TOM HORAN"]
-    
-    static let speaker_names = ["ANDY FENG", "GIL ELBAZ", "GWEN SHAPIRA",  "JAYADEV GOPINATH", "JEANNE HOLM", "PAUL ELLWOOD", "RAJIV MAHESWARAN", "REYNOLD XIN", "TOM HORAN"]
-    static let speaker_titles = []
-    static let speaker_about = []
-    
-    
     static func getSpeakerInfo() -> [[String: String]] {
         
         var speakers = [[String: String]]()
