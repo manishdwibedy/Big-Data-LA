@@ -14,6 +14,7 @@ class SpeakerDetailViewController: UIViewController {
     @IBOutlet weak var speakerTitle: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
+        speakerTitle.title = speaker
         
     }
     
