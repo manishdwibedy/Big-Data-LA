@@ -122,9 +122,6 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="qyB-sN-G32" kind="show" identifier="showSpeakerDetails" id="cHa-IZ-9ig"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -147,6 +144,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="speakerTable" destination="XDL-nY-FID" id="g3h-An-Qsl"/>
+                        <segue destination="qyB-sN-G32" kind="show" identifier="showSpeakerDetails" id="pXs-Vs-w0s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpd-KP-t6j" userLabel="First Responder" sceneMemberID="firstResponder"/>

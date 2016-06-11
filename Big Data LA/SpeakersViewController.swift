@@ -13,6 +13,9 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
     // The speaker's list
     let speakers = SpeakerData.getSpeakerInfo()
     
+    var currentSpeaker: String = ""
+    var showDetails = false
+    
     @IBOutlet weak var speakerTable: UITableView!
     
     override func viewDidLoad() {
@@ -70,6 +73,8 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
         
         print("Selected the speaker :" + speaker["name"]!)
         
+        self.currentSpeaker = speaker["name"]!
+        self.showDetails = true
         self.performSegueWithIdentifier("showSpeakerDetails", sender: self)
 
     }
@@ -78,7 +83,11 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
         if (segue.identifier == "showSpeakerDetails") {
             let svc = segue.destinationViewController as! SpeakerDetailViewController;
             
-            svc.toPass = "Speaker Name"
+            svc.toPass = self.currentSpeaker
+            
+            print(svc.toPass)
+            print(self.currentSpeaker)
+            print("")
             
         }
     }
