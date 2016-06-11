@@ -155,7 +155,7 @@
         <!--Talks-->
         <scene sceneID="Ez4-LH-s3G">
             <objects>
-                <viewController title="Talks" id="kek-c1-Cwf" customClass="UITabBarController" sceneMemberID="viewController">
+                <viewController title="Talks" id="kek-c1-Cwf" customClass="SpeakerTalksViewController" customModule="Big_Data_LA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jya-Rm-wKU"/>
                         <viewControllerLayoutGuide type="bottom" id="slC-Ys-j5n"/>
@@ -171,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cn5-4F-Hpz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1627.5" y="1062.5"/>
+            <point key="canvasLocation" x="1627.5" y="1130.5"/>
         </scene>
         <!--About Speaker-->
         <scene sceneID="d1N-kk-WpH">
