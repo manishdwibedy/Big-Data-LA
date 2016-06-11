@@ -82,10 +82,11 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
         if (segue.identifier == "showSpeakerDetails") {
             let svc = segue.destinationViewController as! UITabBarController;
             let detailViewController = svc.viewControllers![0] as! SpeakerDetailViewController
-            print(svc.viewControllers)
             detailViewController.speaker = self.currentSpeaker
-            print(detailViewController.speaker)
-            print()
+            
+            let talkViewController = svc.viewControllers![1] as! SpeakerTalksViewController
+            talkViewController.speaker = self.currentSpeaker
+            
             
         }
     }

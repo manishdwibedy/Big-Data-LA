@@ -163,11 +163,37 @@
                     <view key="view" contentMode="scaleToFill" id="vr0-2q-RqP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m43-fw-g8h">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Gos-7f-aQl"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="9Is-yX-KMq">
+                                        <barButtonItem key="leftBarButtonItem" image="back-button" id="hmC-qJ-Jqs">
+                                            <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                            <connections>
+                                                <segue destination="d09-Od-mkY" kind="show" id="ZKA-6G-daO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m43-fw-g8h" firstAttribute="leading" secondItem="vr0-2q-RqP" secondAttribute="leadingMargin" constant="-20" id="IKH-yJ-JDx"/>
+                            <constraint firstItem="m43-fw-g8h" firstAttribute="top" secondItem="jya-Rm-wKU" secondAttribute="bottom" id="jej-oO-9av"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m43-fw-g8h" secondAttribute="trailing" constant="-20" id="rhE-Rw-ZRe"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Talks" image="talks" id="Oyy-aI-DRX">
                         <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="navigationBar" destination="m43-fw-g8h" id="XHU-Om-8lf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cn5-4F-Hpz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -349,6 +375,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MMf-kq-MKO"/>
-        <segue reference="HQT-Fh-IN4"/>
+        <segue reference="ZKA-6G-daO"/>
     </inferredMetricsTieBreakers>
 </document>
