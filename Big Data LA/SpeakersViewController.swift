@@ -68,11 +68,7 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
         let row = indexPath.row
         let speaker = speakers[row]
         
-        let alertController = UIAlertController(title: speaker["name"], message:
-            speaker["about"], preferredStyle: UIAlertControllerStyle.Alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-        
-        self.presentViewController(alertController, animated: true, completion: nil)
+        print("Selected the speaker : " + speaker["name"]!)
     }
 
 }
