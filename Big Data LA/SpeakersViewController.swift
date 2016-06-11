@@ -13,7 +13,7 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
     // The speaker's list
     let speakers = SpeakerData.getSpeakerInfo()
     
-    var currentSpeaker: String = ""
+    var currentSpeaker: [String:String] = [:]
     var showDetails = false
     
     @IBOutlet weak var speakerTable: UITableView!
@@ -73,7 +73,7 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
         
         print("Selected the speaker :" + speaker["name"]!)
         
-        self.currentSpeaker = speaker["name"]!
+        self.currentSpeaker = speaker
         self.performSegueWithIdentifier("showSpeakerDetails", sender: self)
 
     }

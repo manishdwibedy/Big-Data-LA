@@ -9,12 +9,12 @@
 import UIKit
 
 class SpeakerDetailViewController: UIViewController {
-    var speaker:String!
+    var speaker: [String:String] = [:]
 
     @IBOutlet weak var speakerTitle: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        speakerTitle.title = speaker
+        speakerTitle.title = self.speaker["name"]
         
     }
     
