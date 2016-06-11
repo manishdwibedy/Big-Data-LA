@@ -1,13 +1,9 @@
 PODS:
   - Alamofire (3.4.0)
-  - mongo-c-driver (0.8.1)
-  - SwiftMongoDB (0.1.0):
-    - mongo-c-driver (~> 0.8.1)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.4)
-  - SwiftMongoDB
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
 
 EXTERNAL SOURCES:
@@ -21,10 +17,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
-  mongo-c-driver: 56558b8009f8d27549b23b62ce64fe33b9818703
-  SwiftMongoDB: cb3ffa38f6daaf3636e1bfc4154a0fe399284869
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 341b5a779fb8a34fbd2bca819a301f1395d310ea
+PODFILE CHECKSUM: 4e980afecf4226f21be8fb3c101dea2bb4ecd8e5
 
 COCOAPODS: 1.0.0
