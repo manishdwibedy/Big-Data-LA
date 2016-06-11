@@ -18,6 +18,7 @@ class SpeakerDetailViewController: UIViewController {
         super.viewDidLoad()
         navigationBar.title = self.speaker["name"]
         speakerName.text = self.speaker["name"]
+        speakerTitle.text = self.speaker["title"]
     }
     
     override func didReceiveMemoryWarning() {
