@@ -74,9 +74,9 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
 
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "showSpeakerDetails") {
-            let svc = segue!.destinationViewController as! SpeakerDetailViewController;
+            let svc = segue.destinationViewController as! SpeakerDetailViewController;
             
             svc.toPass = "Speaker Name"
             
