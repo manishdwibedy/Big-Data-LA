@@ -116,7 +116,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="dummy-image" id="VQw-RC-YJH">
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="40" placeholderIntrinsicHeight="40" image="dummy-image" id="VQw-RC-YJH">
                                                     <rect key="frame" x="15" y="0.0" width="46" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
@@ -206,6 +206,6 @@
         <image name="dummy-image" width="298" height="282"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6JK-ID-Hed"/>
+        <segue reference="MMf-kq-MKO"/>
     </inferredMetricsTieBreakers>
 </document>
