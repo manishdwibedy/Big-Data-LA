@@ -122,6 +122,9 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qyB-sN-G32" kind="show" id="lsH-YB-elt"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -149,6 +152,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpd-KP-t6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="656.5" y="632.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IAL-0F-ngR">
+            <objects>
+                <viewController id="qyB-sN-G32" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IG3-Fk-FOb"/>
+                        <viewControllerLayoutGuide type="bottom" id="tga-yb-SS5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UIn-oH-agi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h1k-to-W5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180.5" y="632.5"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="VbQ-Zo-uyy">
