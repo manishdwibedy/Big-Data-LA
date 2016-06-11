@@ -9,16 +9,12 @@
 import UIKit
 
 class SpeakerDetailViewController: UIViewController {
-    var toPass:String!
+    var speaker:String!
 
     @IBOutlet weak var speakerTitle: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        print()
     }
     
     override func didReceiveMemoryWarning() {

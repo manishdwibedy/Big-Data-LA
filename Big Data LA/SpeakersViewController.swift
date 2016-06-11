@@ -74,7 +74,6 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
         print("Selected the speaker :" + speaker["name"]!)
         
         self.currentSpeaker = speaker["name"]!
-        self.showDetails = true
         self.performSegueWithIdentifier("showSpeakerDetails", sender: self)
 
     }
@@ -82,12 +81,7 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "showSpeakerDetails") {
             let svc = segue.destinationViewController as! SpeakerDetailViewController;
-            
-            svc.toPass = self.currentSpeaker
-            
-            print(svc.toPass)
-            print(self.currentSpeaker)
-            print("")
+            svc.speaker = self.currentSpeaker
             
         }
     }
