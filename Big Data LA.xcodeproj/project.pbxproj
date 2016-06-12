@@ -16,6 +16,8 @@
 		5B66AE681CF04883002E261B /* Big_Data_LATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B66AE671CF04883002E261B /* Big_Data_LATests.swift */; };
 		5B66AE731CF04883002E261B /* Big_Data_LAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B66AE721CF04883002E261B /* Big_Data_LAUITests.swift */; };
 		5BA8772D1D0CDC17002B915A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5BA8772C1D0CDC17002B915A /* .gitignore */; };
+		5BA8772F1D0CDD76002B915A /* DB_Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA8772E1D0CDD76002B915A /* DB_Constants.swift */; };
+		5BA877311D0CDF20002B915A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA877301D0CDF20002B915A /* API.swift */; };
 		5BAB62C01D0B4179004B4088 /* SpeakersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB62BF1D0B4179004B4088 /* SpeakersViewController.swift */; };
 		5BAB62C41D0B6EAD004B4088 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB62C31D0B6EAD004B4088 /* constants.swift */; };
 		5BAB62C81D0BA236004B4088 /* SpeakerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB62C71D0BA236004B4088 /* SpeakerDetailViewController.swift */; };
@@ -61,6 +63,8 @@
 		5B66AE721CF04883002E261B /* Big_Data_LAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Big_Data_LAUITests.swift; sourceTree = "<group>"; };
 		5B66AE741CF04883002E261B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BA8772C1D0CDC17002B915A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5BA8772E1D0CDD76002B915A /* DB_Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB_Constants.swift; sourceTree = "<group>"; };
+		5BA877301D0CDF20002B915A /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		5BAB62BF1D0B4179004B4088 /* SpeakersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersViewController.swift; sourceTree = "<group>"; };
 		5BAB62C31D0B6EAD004B4088 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		5BAB62C71D0BA236004B4088 /* SpeakerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeakerDetailViewController.swift; path = ../SpeakerDetailViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 		5B66AE431CF04883002E261B = {
 			isa = PBXGroup;
 			children = (
+				5BA8772E1D0CDD76002B915A /* DB_Constants.swift */,
 				5BA8772C1D0CDC17002B915A /* .gitignore */,
 				5B66AE4E1CF04883002E261B /* Big Data LA */,
 				5B66AE661CF04883002E261B /* Big Data LATests */,
@@ -141,6 +146,7 @@
 				5BAB62BF1D0B4179004B4088 /* SpeakersViewController.swift */,
 				5BAB62C91D0CA110004B4088 /* SpeakerTalksViewController.swift */,
 				5BAB62C31D0B6EAD004B4088 /* constants.swift */,
+				5BA877301D0CDF20002B915A /* API.swift */,
 			);
 			path = "Big Data LA";
 			sourceTree = "<group>";
@@ -454,9 +460,11 @@
 				5B66AE521CF04883002E261B /* ViewController.swift in Sources */,
 				5B66AE501CF04883002E261B /* AppDelegate.swift in Sources */,
 				5B66AE581CF04883002E261B /* Big_Data_LA.xcdatamodeld in Sources */,
+				5BA877311D0CDF20002B915A /* API.swift in Sources */,
 				5BAB62C41D0B6EAD004B4088 /* constants.swift in Sources */,
 				5BAB62C01D0B4179004B4088 /* SpeakersViewController.swift in Sources */,
 				5BFC940D1CF4D68D00C2DDBF /* MapViewController.swift in Sources */,
+				5BA8772F1D0CDD76002B915A /* DB_Constants.swift in Sources */,
 				5BAB62C81D0BA236004B4088 /* SpeakerDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
