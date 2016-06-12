@@ -18,6 +18,8 @@
 		5BA8772D1D0CDC17002B915A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5BA8772C1D0CDC17002B915A /* .gitignore */; };
 		5BA8772F1D0CDD76002B915A /* DB_Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA8772E1D0CDD76002B915A /* DB_Constants.swift */; };
 		5BA877311D0CDF20002B915A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA877301D0CDF20002B915A /* API.swift */; };
+		5BA877331D0E0F64002B915A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA877321D0E0F64002B915A /* MapKit.framework */; };
+		5BA877351D0E0F6E002B915A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA877341D0E0F6E002B915A /* CoreLocation.framework */; };
 		5BAB62C01D0B4179004B4088 /* SpeakersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB62BF1D0B4179004B4088 /* SpeakersViewController.swift */; };
 		5BAB62C41D0B6EAD004B4088 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB62C31D0B6EAD004B4088 /* constants.swift */; };
 		5BAB62C81D0BA236004B4088 /* SpeakerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB62C71D0BA236004B4088 /* SpeakerDetailViewController.swift */; };
@@ -65,6 +67,8 @@
 		5BA8772C1D0CDC17002B915A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5BA8772E1D0CDD76002B915A /* DB_Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB_Constants.swift; sourceTree = "<group>"; };
 		5BA877301D0CDF20002B915A /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		5BA877321D0E0F64002B915A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5BA877341D0E0F6E002B915A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5BAB62BF1D0B4179004B4088 /* SpeakersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersViewController.swift; sourceTree = "<group>"; };
 		5BAB62C31D0B6EAD004B4088 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		5BAB62C71D0BA236004B4088 /* SpeakerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeakerDetailViewController.swift; path = ../SpeakerDetailViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA877351D0E0F6E002B915A /* CoreLocation.framework in Frameworks */,
+				5BA877331D0E0F64002B915A /* MapKit.framework in Frameworks */,
 				D38B658B1CF8DEA08D3349CC /* Pods_Big_Data_LA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +178,8 @@
 		775BA25EC1A648CB0EBC127E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5BA877341D0E0F6E002B915A /* CoreLocation.framework */,
+				5BA877321D0E0F64002B915A /* MapKit.framework */,
 				87CA7E679FD45A985E3140D3 /* Pods_Big_Data_LA.framework */,
 				E2761D05F9F23902F37B50AD /* Pods_Big_Data_LATests.framework */,
 				2AC0B2B5F6C4D7EB202CA328 /* Pods_Big_Data_LAUITests.framework */,

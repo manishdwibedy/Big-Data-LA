@@ -25,6 +25,9 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
         // Adding deletgate to the controller
         speakerTable.delegate = self
         speakerTable.dataSource = self
+        
+        let speakers = API.speakers
+        //print(speakers[0]["name"]!)
     }
 
     override func didReceiveMemoryWarning() {

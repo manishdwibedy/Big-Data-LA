@@ -353,7 +353,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5f-I4-tUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1131.5" y="632.5"/>
+            <point key="canvasLocation" x="1119.5" y="796.5"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="VbQ-Zo-uyy">
@@ -415,7 +415,7 @@
         <image name="talks" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="HQT-Fh-IN4"/>
         <segue reference="MMf-kq-MKO"/>
-        <segue reference="ZKA-6G-daO"/>
     </inferredMetricsTieBreakers>
 </document>
