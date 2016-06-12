@@ -96,11 +96,11 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="7g3-tZ-8oi" detailTextLabel="cCV-o7-aE4" imageView="VQw-RC-YJH" style="IBUITableViewCellStyleSubtitle" id="F1X-d5-Gtu">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="7g3-tZ-8oi" detailTextLabel="cCV-o7-aE4" imageView="VQw-RC-YJH" style="IBUITableViewCellStyleSubtitle" id="F1X-d5-Gtu">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F1X-d5-Gtu" id="na1-f5-IqK">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="328" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7g3-tZ-8oi">
@@ -120,9 +120,11 @@
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="40" placeholderIntrinsicHeight="40" image="dummy-image" id="VQw-RC-YJH">
                                                     <rect key="frame" x="15" y="0.0" width="46" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
