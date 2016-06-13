@@ -239,6 +239,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="navigationBar" destination="m43-fw-g8h" id="XHU-Om-8lf"/>
+                        <outlet property="talkDetails" destination="8Wo-f3-mbW" id="EB4-XW-Aum"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cn5-4F-Hpz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -422,7 +423,7 @@
         <image name="talks" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZKA-6G-daO"/>
         <segue reference="MMf-kq-MKO"/>
+        <segue reference="HQT-Fh-IN4"/>
     </inferredMetricsTieBreakers>
 </document>

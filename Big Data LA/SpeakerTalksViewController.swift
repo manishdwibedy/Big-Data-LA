@@ -13,11 +13,12 @@ class SpeakerTalksViewController: UIViewController {
     var speaker: [String:String] = [:]
 
     @IBOutlet weak var navigationBar: UINavigationBar!
+    @IBOutlet weak var talkDetails: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBar.topItem?.title = speaker["name"]
-        
+        talkDetails.setContentOffset(CGPointZero, animated: false)
         Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
             .responseJSON { response in
                 print(response.request)  // original URL request
