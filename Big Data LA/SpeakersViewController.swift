@@ -11,13 +11,16 @@ import UIKit
 class SpeakersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // The speaker's list
-    let speakers = SpeakerData.getSpeakerInfo()
+    var speakers = SpeakerData.getSpeakerInfo()
     
     var currentSpeaker: [String:String] = [:]
     var showDetails = false
     
     @IBOutlet weak var speakerTable: UITableView!
     
+    override func viewWillAppear(animated: Bool) {
+        self.speakers = API.speakers
+    }
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -26,7 +29,7 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
         speakerTable.delegate = self
         speakerTable.dataSource = self
         
-        let speakers = API.speakers
+        //let speakers = API.speakers
         //print(speakers[0]["name"]!)
     }
 

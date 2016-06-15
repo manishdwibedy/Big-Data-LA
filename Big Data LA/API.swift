@@ -25,7 +25,7 @@ class API{
                     
                     for (_, object) in speakersArray {
                         let speaker: [String:String] = [
-                            "id": object["id"].stringValue,
+                            "id": object["_id"]["$oid"].stringValue,
                             "name" : object["name"].stringValue,
                             "title" : object["title"].stringValue,
                             "about" : object["about"].stringValue
@@ -33,7 +33,6 @@ class API{
                         API.speakers.append(speaker)
                     }
                 }
-            
         }
     }
     
