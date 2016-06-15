@@ -25,6 +25,7 @@ class API{
                     
                     for (_, object) in speakersArray {
                         let speaker: [String:String] = [
+                            "id": object["id"].stringValue,
                             "name" : object["name"].stringValue,
                             "title" : object["title"].stringValue,
                             "about" : object["about"].stringValue
@@ -37,6 +38,7 @@ class API{
     }
     
     static func getTalkDetails(speakerName: String) -> String{
+        let URL = API_CONSTANTS.getSpeakerURL()
         print("Calling API Now for " + speakerName)
 //        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
 //            .responseJSON { response in
