@@ -423,7 +423,7 @@
         <image name="talks" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="1tG-35-3OH"/>
         <segue reference="MMf-kq-MKO"/>
-        <segue reference="HQT-Fh-IN4"/>
     </inferredMetricsTieBreakers>
 </document>
