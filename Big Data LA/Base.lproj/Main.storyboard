@@ -239,6 +239,10 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="navigationBar" destination="m43-fw-g8h" id="XHU-Om-8lf"/>
+                        <outlet property="sessionDetails" destination="8Wo-f3-mbW" id="uFT-9M-KyO"/>
+                        <outlet property="sessionLocation" destination="hFD-DF-ixY" id="thW-8g-Zcd"/>
+                        <outlet property="sessionName" destination="IYb-p5-nIu" id="IJG-1x-eEf"/>
+                        <outlet property="sessionTime" destination="jvT-0x-etc" id="ZAK-wa-4nw"/>
                         <outlet property="talkDetails" destination="8Wo-f3-mbW" id="EB4-XW-Aum"/>
                     </connections>
                 </viewController>
@@ -423,7 +427,7 @@
         <image name="talks" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1tG-35-3OH"/>
+        <segue reference="ZKA-6G-daO"/>
         <segue reference="MMf-kq-MKO"/>
     </inferredMetricsTieBreakers>
 </document>

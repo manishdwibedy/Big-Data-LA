@@ -14,6 +14,10 @@ class SpeakerTalksViewController: UIViewController {
 
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var talkDetails: UITextView!
+    @IBOutlet weak var sessionName: UILabel!
+    @IBOutlet weak var sessionLocation: UILabel!
+    @IBOutlet weak var sessionTime: UILabel!
+    @IBOutlet weak var sessionDetails: UITextView!
     
     override func viewWillAppear(animated: Bool) {
         let speakerName = speaker["name"]!
