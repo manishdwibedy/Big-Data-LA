@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class API{
     static var speakers = [[String:String]]()
-    
+    static var talk = [String: String]()
     static func getSpeaker(){
         let URL = API_CONSTANTS.getSpeakerURL()
         
@@ -36,15 +36,25 @@ class API{
         }
     }
     
-    static func getTalkDetails(speakerID: String) -> String{
+    static func getTalkDetails(speakerID: String){
         let URL = API_CONSTANTS.getTalkURL(speakerID)
+        var talk = [String:String]()
         print("Calling API Now for " + speakerID)
         Alamofire.request(.GET, URL)
             .responseJSON { response in
-                if let JSON = response.result.value {
-                    print("JSON: \(JSON)")
+                if let talkJSON = response.result.value {
+                    API.talk = [String:String]()
+                    let talkArray = JSON(talkJSON)["talk"]
+                    
+                    for (key, value) in talkArray {
+                        talk[key] = value.stringValue
+//                        talk["name"] = object["name"].stringValue
+//                        talk["location"] = object["location"].stringValue
+//                        talk["time"] = object["time"].stringValue
+//                        talk["about"] = object["about"].stringValue
+                    }
+                    API.talk = talk
                 }
         }
-        return "Talk Details"
     }
 }

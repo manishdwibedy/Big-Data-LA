@@ -93,6 +93,7 @@ class SpeakersViewController: UIViewController, UITableViewDataSource, UITableVi
             let talkViewController = svc.viewControllers![1] as! SpeakerTalksViewController
             talkViewController.speaker = self.currentSpeaker
             
+            API.getTalkDetails(self.currentSpeaker["id"]!)
             
         }
     }

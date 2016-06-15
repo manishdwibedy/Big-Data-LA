@@ -20,14 +20,17 @@ class SpeakerTalksViewController: UIViewController {
     @IBOutlet weak var sessionDetails: UITextView!
     
     override func viewWillAppear(animated: Bool) {
-        let speakerID = speaker["id"]!
-        let talkDetails = API.getTalkDetails(speakerID)
-        
+        let talk = API.talk
+        sessionName.text = talk["name"]
+        sessionLocation.text = talk["location"]
+        sessionTime.text = talk["time"]
+        sessionDetails.text = talk["about"]
+        navigationBar.topItem?.title = speaker["name"]
+        talkDetails.setContentOffset(CGPointZero, animated: false)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.topItem?.title = speaker["name"]
-        talkDetails.setContentOffset(CGPointZero, animated: false)
+        
     }
     
     override func didReceiveMemoryWarning() {
