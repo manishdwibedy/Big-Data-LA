@@ -20,8 +20,8 @@ class SpeakerTalksViewController: UIViewController {
     @IBOutlet weak var sessionDetails: UITextView!
     
     override func viewWillAppear(animated: Bool) {
-        let speakerName = speaker["name"]!
-        let talkDetails = API.getTalkDetails(speakerName)
+        let speakerID = speaker["id"]!
+        let talkDetails = API.getTalkDetails(speakerID)
         
     }
     override func viewDidLoad() {

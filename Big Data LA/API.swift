@@ -36,20 +36,15 @@ class API{
         }
     }
     
-    static func getTalkDetails(speakerName: String) -> String{
-        let URL = API_CONSTANTS.getSpeakerURL()
-        print("Calling API Now for " + speakerName)
-//        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
-//            .responseJSON { response in
-//                print(response.request)  // original URL request
-//                print(response.response) // URL response
-//                print(response.data)     // server data
-//                print(response.result)   // result of response serialization
-//                
-//                if let JSON = response.result.value {
-//                    print("JSON: \(JSON)")
-//                }
-//        }
+    static func getTalkDetails(speakerID: String) -> String{
+        let URL = API_CONSTANTS.getTalkURL(speakerID)
+        print("Calling API Now for " + speakerID)
+        Alamofire.request(.GET, URL)
+            .responseJSON { response in
+                if let JSON = response.result.value {
+                    print("JSON: \(JSON)")
+                }
+        }
         return "Talk Details"
     }
 }
