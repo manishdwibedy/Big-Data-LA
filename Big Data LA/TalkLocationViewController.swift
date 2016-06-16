@@ -8,11 +8,14 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class TalkLocationViewController: UIViewController {
+class TalkLocationViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var navigationBar: UINavigationBar!
+    let corelocationManager = CLLocationManager()
+    
     var talk = [String:String]()
     
     override func viewDidLoad() {
@@ -20,6 +23,57 @@ class TalkLocationViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         navigationBar.topItem?.title = talk["name"]
+        
+        showTalkLocation()
+        
+        corelocationManager.delegate = self
+        let authCode = CLLocationManager.authorizationStatus()
+        
+        if authCode == CLAuthorizationStatus.NotDetermined && corelocationManager.respondsToSelector("requestAlwaysAuthorization") || corelocationManager.respondsToSelector("requestWhenInUseAuthorization"){
+            if(NSBundle.mainBundle().objectForInfoDictionaryKey("NSLocationAlwaysUsageDescription") != nil){
+                corelocationManager.requestAlwaysAuthorization()
+                corelocationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+                corelocationManager.startUpdatingLocation()
+
+                self.mapView.showsUserLocation = true
+            }
+            else{
+                print("No description provided")
+            }
+        }
+    }
+    
+    func showTalkLocation() {
+        let lat = Double(talk["lat"]!)!
+        let long = Double(talk["long"]!)!
+        
+        // Setting the location
+        let location = CLLocationCoordinate2D(
+            latitude: lat,
+            longitude: long
+        )
+        
+        // Setting the region
+        let span = MKCoordinateSpanMake(0.01, 0.01)
+        let region = MKCoordinateRegion(center: location, span: span)
+        
+        // Assigning the region to the mapView
+        mapView.setRegion(region, animated: true)
+        
+        // Adding an annotation
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = location
+        annotation.title = talk["name"]!
+        let label = "\(talk["location"]!) (\(talk["time"]!))"
+        annotation.subtitle = label
+        mapView.addAnnotation(annotation)
+        
+        var userLoc = self.mapView.userLocation
+        
+//        let newDistance = CLLocation(latitude: userLoc.coordinate.latitude, longitude: userLoc.coordinate.longitude).distanceFromLocation(CLLocation(latitude: annotation.latitude, longitude: annotation.longitude))
+//        let region = MKCoordinateRegionMakeWithDistance(userLoc.coordinate,2 * newDistance, 2 * newDistance)
+//        let adjustRegion = self.mapView.regionThatFits(region)
+//        self.mapView.setRegion(adjustRegion, animated:true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,7 +81,11 @@ class TalkLocationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        print("locations = \(locValue.latitude) \(locValue.longitude)")
+    }
+    
     /*
     // MARK: - Navigation
 
