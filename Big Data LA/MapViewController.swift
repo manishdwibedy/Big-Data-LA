@@ -65,34 +65,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         else{
             getLocation()
         }
-//        self.mapView.showsUserLocation = true
-//        
-//        self.mapView.removeAnnotations(self.mapView.annotations)
-//        
-//        
-//        
-//        
-//        
-//        locationManager.delegate = self
-//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-//        locationManager.requestAlwaysAuthorization()
-//        locationManager.startUpdatingLocation()
-//        
-//        
-//        let currentLocation = self.locationManager.location
-//        
-//        let latitude: Double = currentLocation!.coordinate.latitude
-//        let longitude: Double = currentLocation!.coordinate.longitude
-//        
-//        print("current latitude :: \(latitude)")
-//        print("current longitude :: \(longitude)")
     }
 
     func getLocation(){
         self.mapView.showsUserLocation = true
 
         locationManager.startUpdatingLocationWithCompletionHandler { (latitude, longitude, status, verboseMessage, error) in
-//            self.displayLocation(CLLocation(latitude: latitude, longitude: longitude))
+            
         }
         
     }
