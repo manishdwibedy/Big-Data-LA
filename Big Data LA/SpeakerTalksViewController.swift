@@ -38,4 +38,19 @@ class SpeakerTalksViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "showTalkLocation") {
+            print("Navigating!")
+//            let svc = segue.destinationViewController as! UITabBarController;
+//            let detailViewController = svc.viewControllers![0] as! SpeakerDetailViewController
+//            detailViewController.speaker = self.currentSpeaker
+//            
+//            let talkViewController = svc.viewControllers![1] as! SpeakerTalksViewController
+//            talkViewController.speaker = self.currentSpeaker
+//            
+//            API.getTalkDetails(self.currentSpeaker["id"]!)
+            
+        }
+    }
 }
