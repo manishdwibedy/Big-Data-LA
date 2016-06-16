@@ -17,6 +17,8 @@ class TalkLocationViewController: UIViewController, CLLocationManagerDelegate {
     let corelocationManager = CLLocationManager()
     
     var talk = [String:String]()
+    var lat:Double = 0.0
+    var long:Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,8 +46,8 @@ class TalkLocationViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func showTalkLocation() {
-        let lat = Double(talk["lat"]!)!
-        let long = Double(talk["long"]!)!
+        self.lat = Double(talk["lat"]!)!
+        self.long = Double(talk["long"]!)!
         
         // Setting the location
         let location = CLLocationCoordinate2D(
@@ -67,13 +69,6 @@ class TalkLocationViewController: UIViewController, CLLocationManagerDelegate {
         let label = "\(talk["location"]!) (\(talk["time"]!))"
         annotation.subtitle = label
         mapView.addAnnotation(annotation)
-        
-        var userLoc = self.mapView.userLocation
-        
-//        let newDistance = CLLocation(latitude: userLoc.coordinate.latitude, longitude: userLoc.coordinate.longitude).distanceFromLocation(CLLocation(latitude: annotation.latitude, longitude: annotation.longitude))
-//        let region = MKCoordinateRegionMakeWithDistance(userLoc.coordinate,2 * newDistance, 2 * newDistance)
-//        let adjustRegion = self.mapView.regionThatFits(region)
-//        self.mapView.setRegion(adjustRegion, animated:true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,6 +78,12 @@ class TalkLocationViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        
+        let newDistance = CLLocation(latitude: locValue.latitude, longitude: locValue.longitude).distanceFromLocation(CLLocation(latitude: self.lat, longitude: self.long))
+        let region = MKCoordinateRegionMakeWithDistance(locValue,2 * newDistance, 2 * newDistance)
+        let adjustRegion = self.mapView.regionThatFits(region)
+        self.mapView.setRegion(adjustRegion, animated:true)
+        
         print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
     
