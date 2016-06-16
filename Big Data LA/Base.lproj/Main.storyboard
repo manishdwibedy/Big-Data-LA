@@ -193,12 +193,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFD-DF-ixY" userLabel="Talk's Location">
-                                <rect key="frame" x="20" y="151" width="335" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvT-0x-etc" userLabel="Talk's Time">
                                 <rect key="frame" x="20" y="192" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -212,24 +206,34 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceRightToLeft" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbk-tE-1E4">
+                                <rect key="frame" x="20" y="135" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gyT-Vi-28N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Button" image="map">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jvT-0x-etc" firstAttribute="top" secondItem="hFD-DF-ixY" secondAttribute="bottom" constant="15" id="CAz-Qr-Fbc"/>
+                            <constraint firstItem="Fbk-tE-1E4" firstAttribute="top" secondItem="IYb-p5-nIu" secondAttribute="bottom" constant="10" id="2Q5-0a-5pi"/>
+                            <constraint firstItem="Fbk-tE-1E4" firstAttribute="leading" secondItem="vr0-2q-RqP" secondAttribute="leadingMargin" id="3aF-l2-V3T"/>
                             <constraint firstItem="m43-fw-g8h" firstAttribute="leading" secondItem="vr0-2q-RqP" secondAttribute="leadingMargin" constant="-20" id="IKH-yJ-JDx"/>
+                            <constraint firstItem="Fbk-tE-1E4" firstAttribute="trailing" secondItem="vr0-2q-RqP" secondAttribute="trailingMargin" id="JbP-Cv-Riu"/>
                             <constraint firstItem="slC-Ys-j5n" firstAttribute="top" secondItem="8Wo-f3-mbW" secondAttribute="bottom" constant="50" id="LqS-8S-wzB"/>
-                            <constraint firstItem="hFD-DF-ixY" firstAttribute="leading" secondItem="vr0-2q-RqP" secondAttribute="leadingMargin" id="Q3U-RR-wlP"/>
                             <constraint firstItem="8Wo-f3-mbW" firstAttribute="trailing" secondItem="vr0-2q-RqP" secondAttribute="trailingMargin" id="Wir-Ce-YCz"/>
                             <constraint firstItem="8Wo-f3-mbW" firstAttribute="leading" secondItem="vr0-2q-RqP" secondAttribute="leadingMargin" id="ZKF-W3-I6Z"/>
                             <constraint firstItem="8Wo-f3-mbW" firstAttribute="top" secondItem="jvT-0x-etc" secondAttribute="bottom" constant="15" id="cgy-Ta-wJO"/>
-                            <constraint firstItem="hFD-DF-ixY" firstAttribute="top" secondItem="IYb-p5-nIu" secondAttribute="bottom" constant="15" id="dRg-BC-vyL"/>
                             <constraint firstItem="jvT-0x-etc" firstAttribute="trailing" secondItem="vr0-2q-RqP" secondAttribute="trailingMargin" id="exy-gQ-c3V"/>
                             <constraint firstItem="m43-fw-g8h" firstAttribute="top" secondItem="jya-Rm-wKU" secondAttribute="bottom" id="jej-oO-9av"/>
-                            <constraint firstItem="hFD-DF-ixY" firstAttribute="trailing" secondItem="vr0-2q-RqP" secondAttribute="trailingMargin" id="mja-pw-8RG"/>
                             <constraint firstItem="IYb-p5-nIu" firstAttribute="trailing" secondItem="vr0-2q-RqP" secondAttribute="trailingMargin" id="rTb-ka-aeU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="m43-fw-g8h" secondAttribute="trailing" constant="-20" id="rhE-Rw-ZRe"/>
                             <constraint firstItem="IYb-p5-nIu" firstAttribute="top" secondItem="m43-fw-g8h" secondAttribute="bottom" constant="20" id="sgf-Y0-Xxs"/>
                             <constraint firstItem="IYb-p5-nIu" firstAttribute="leading" secondItem="vr0-2q-RqP" secondAttribute="leadingMargin" id="tVk-zz-2DS"/>
+                            <constraint firstItem="jvT-0x-etc" firstAttribute="top" secondItem="Fbk-tE-1E4" secondAttribute="bottom" constant="20" id="w8J-PU-b6l"/>
                             <constraint firstItem="jvT-0x-etc" firstAttribute="leading" secondItem="vr0-2q-RqP" secondAttribute="leadingMargin" id="x3N-XL-tJv"/>
                         </constraints>
                     </view>
@@ -240,7 +244,7 @@
                     <connections>
                         <outlet property="navigationBar" destination="m43-fw-g8h" id="XHU-Om-8lf"/>
                         <outlet property="sessionDetails" destination="8Wo-f3-mbW" id="uFT-9M-KyO"/>
-                        <outlet property="sessionLocation" destination="hFD-DF-ixY" id="thW-8g-Zcd"/>
+                        <outlet property="sessionLocation" destination="Fbk-tE-1E4" id="8gz-8O-4Uz"/>
                         <outlet property="sessionName" destination="IYb-p5-nIu" id="IJG-1x-eEf"/>
                         <outlet property="sessionTime" destination="jvT-0x-etc" id="ZAK-wa-4nw"/>
                         <outlet property="talkDetails" destination="8Wo-f3-mbW" id="EB4-XW-Aum"/>
@@ -424,6 +428,7 @@
         <image name="about" width="50" height="50"/>
         <image name="back-button" width="25" height="41"/>
         <image name="dummy-image" width="298" height="282"/>
+        <image name="map" width="50" height="50"/>
         <image name="talks" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>

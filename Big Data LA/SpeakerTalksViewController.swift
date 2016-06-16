@@ -15,7 +15,8 @@ class SpeakerTalksViewController: UIViewController {
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var talkDetails: UITextView!
     @IBOutlet weak var sessionName: UILabel!
-    @IBOutlet weak var sessionLocation: UILabel!
+    //@IBOutlet weak var sessionLocation: UILabel!
+    @IBOutlet weak var sessionLocation: UIButton!
     @IBOutlet weak var sessionTime: UILabel!
     @IBOutlet weak var sessionDetails: UITextView!
     
@@ -23,7 +24,7 @@ class SpeakerTalksViewController: UIViewController {
         super.viewDidLoad()
         let talk = API.talk
         sessionName.text = talk["name"]
-        sessionLocation.text = talk["location"]
+        sessionLocation.setTitle(talk["location"], forState: UIControlState.Normal)
         sessionTime.text = talk["time"]
         navigationBar.topItem?.title = speaker["name"]
         sessionDetails.text = talk["about"]
