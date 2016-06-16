@@ -11,11 +11,13 @@ import UIKit
 class TalkLocationViewController: UIViewController {
 
     @IBOutlet weak var navigationBar: UINavigationBar!
+    var talk = [String:String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        navigationBar.topItem?.title = "Name of the Talk"
+        navigationBar.topItem?.title = talk["name"]
     }
 
     override func didReceiveMemoryWarning() {
