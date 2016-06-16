@@ -284,13 +284,17 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BY2-Ng-cEl">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BY2-Ng-cEl">
                                 <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="BY2-Ng-cEl" firstAttribute="leading" secondItem="0eU-SW-HHO" secondAttribute="leadingMargin" constant="-20" id="DxW-xf-8fw"/>
+                            <constraint firstItem="BY2-Ng-cEl" firstAttribute="top" secondItem="FWJ-2O-Oug" secondAttribute="bottom" id="MrY-YB-gcg"/>
                             <constraint firstItem="FWJ-2O-Oug" firstAttribute="leading" secondItem="0eU-SW-HHO" secondAttribute="leadingMargin" constant="-20" id="QbF-jw-VFo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BY2-Ng-cEl" secondAttribute="trailing" constant="-20" id="TZR-3l-qfk"/>
+                            <constraint firstItem="q8v-71-cY7" firstAttribute="top" secondItem="BY2-Ng-cEl" secondAttribute="bottom" id="Vsp-7u-4bf"/>
                             <constraint firstItem="FWJ-2O-Oug" firstAttribute="top" secondItem="g5H-Ye-iHH" secondAttribute="bottom" id="b2m-px-Cmk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FWJ-2O-Oug" secondAttribute="trailing" constant="-20" id="hjW-yL-w1i"/>
                         </constraints>
