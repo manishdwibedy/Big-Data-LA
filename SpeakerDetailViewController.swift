@@ -17,14 +17,19 @@ class SpeakerDetailViewController: UIViewController {
     @IBOutlet weak var speakerAbout: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.topItem?.title = self.speaker["name"]
-        speakerName.text = self.speaker["name"]
-        speakerTitle.text = self.speaker["title"]
-        speakerAbout.text = self.speaker["about"]
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        navigationBar.topItem?.title = self.speaker["name"]
+        speakerName.text = self.speaker["name"]
+        speakerTitle.text = self.speaker["title"]
+        speakerAbout.text = self.speaker["about"]
+        speakerAbout.scrollRangeToVisible(NSMakeRange(0, 0))
     }
 }
