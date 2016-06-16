@@ -259,7 +259,7 @@
         <!--Talk Location Map-->
         <scene sceneID="OHu-Qe-PMn">
             <objects>
-                <viewController id="UgE-k9-DMf" userLabel="Talk Location Map" sceneMemberID="viewController">
+                <viewController id="UgE-k9-DMf" userLabel="Talk Location Map" customClass="TalkLocationViewController" customModule="Big_Data_LA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g5H-Ye-iHH"/>
                         <viewControllerLayoutGuide type="bottom" id="q8v-71-cY7"/>
@@ -293,6 +293,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="navigationBar" destination="FWJ-2O-Oug" id="Uor-SH-yCg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFn-Ap-Wx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

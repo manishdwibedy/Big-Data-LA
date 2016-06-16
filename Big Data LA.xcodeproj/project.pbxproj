@@ -24,6 +24,7 @@
 		5BAB62C41D0B6EAD004B4088 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB62C31D0B6EAD004B4088 /* constants.swift */; };
 		5BAB62C81D0BA236004B4088 /* SpeakerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB62C71D0BA236004B4088 /* SpeakerDetailViewController.swift */; };
 		5BAB62CA1D0CA110004B4088 /* SpeakerTalksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB62C91D0CA110004B4088 /* SpeakerTalksViewController.swift */; };
+		5BEAB0AB1D124E570094BEB4 /* TalkLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAB0AA1D124E570094BEB4 /* TalkLocationViewController.swift */; };
 		5BF09D091D12375F00D45601 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF09D081D12375F00D45601 /* LocationManager.swift */; };
 		5BF09D0B1D12485E00D45601 /* locations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 5BF09D0A1D12485E00D45601 /* locations.gpx */; };
 		5BFC940D1CF4D68D00C2DDBF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC940C1CF4D68D00C2DDBF /* MapViewController.swift */; };
@@ -75,6 +76,7 @@
 		5BAB62C31D0B6EAD004B4088 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		5BAB62C71D0BA236004B4088 /* SpeakerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeakerDetailViewController.swift; path = ../SpeakerDetailViewController.swift; sourceTree = "<group>"; };
 		5BAB62C91D0CA110004B4088 /* SpeakerTalksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerTalksViewController.swift; sourceTree = "<group>"; };
+		5BEAB0AA1D124E570094BEB4 /* TalkLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkLocationViewController.swift; sourceTree = "<group>"; };
 		5BF09D081D12375F00D45601 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5BF09D0A1D12485E00D45601 /* locations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = locations.gpx; sourceTree = "<group>"; };
 		5BFC940C1CF4D68D00C2DDBF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				5B66AE4F1CF04883002E261B /* AppDelegate.swift */,
 				5B66AE511CF04883002E261B /* ViewController.swift */,
 				5B66AE531CF04883002E261B /* Main.storyboard */,
+				5BEAB0AA1D124E570094BEB4 /* TalkLocationViewController.swift */,
 				5B66AE591CF04883002E261B /* Assets.xcassets */,
 				5B66AE5B1CF04883002E261B /* LaunchScreen.storyboard */,
 				5BF09D081D12375F00D45601 /* LocationManager.swift */,
@@ -481,6 +484,7 @@
 				5BAB62C01D0B4179004B4088 /* SpeakersViewController.swift in Sources */,
 				5BFC940D1CF4D68D00C2DDBF /* MapViewController.swift in Sources */,
 				5BA8772F1D0CDD76002B915A /* DB_Constants.swift in Sources */,
+				5BEAB0AB1D124E570094BEB4 /* TalkLocationViewController.swift in Sources */,
 				5BAB62C81D0BA236004B4088 /* SpeakerDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
