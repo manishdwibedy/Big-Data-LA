@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Big Data LA/locations.gpx">
+   </FileRef>
+   <FileRef
       location = "group:Big Data LA.xcodeproj">
    </FileRef>
    <FileRef
