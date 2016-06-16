@@ -214,6 +214,9 @@
                                 <state key="normal" title="Location">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="UgE-k9-DMf" kind="showDetail" action="showViewController:sender:" id="s5W-Ip-MaS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -252,6 +255,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cn5-4F-Hpz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1627.5" y="1130.5"/>
+        </scene>
+        <!--Talk Location Map-->
+        <scene sceneID="OHu-Qe-PMn">
+            <objects>
+                <viewController id="UgE-k9-DMf" userLabel="Talk Location Map" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g5H-Ye-iHH"/>
+                        <viewControllerLayoutGuide type="bottom" id="q8v-71-cY7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0eU-SW-HHO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FWJ-2O-Oug">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ye7-5F-du5"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="23j-OI-ERq">
+                                        <barButtonItem key="leftBarButtonItem" image="back-button" id="4MT-Mb-e7n">
+                                            <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                            <connections>
+                                                <segue destination="kek-c1-Cwf" kind="show" id="3Tu-5r-uJf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FWJ-2O-Oug" firstAttribute="leading" secondItem="0eU-SW-HHO" secondAttribute="leadingMargin" constant="-20" id="QbF-jw-VFo"/>
+                            <constraint firstItem="FWJ-2O-Oug" firstAttribute="top" secondItem="g5H-Ye-iHH" secondAttribute="bottom" id="b2m-px-Cmk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FWJ-2O-Oug" secondAttribute="trailing" constant="-20" id="hjW-yL-w1i"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFn-Ap-Wx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2048.5" y="1130.5"/>
         </scene>
         <!--About Speaker-->
         <scene sceneID="d1N-kk-WpH">
@@ -431,6 +476,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ZKA-6G-daO"/>
+        <segue reference="3Tu-5r-uJf"/>
         <segue reference="MMf-kq-MKO"/>
     </inferredMetricsTieBreakers>
 </document>
