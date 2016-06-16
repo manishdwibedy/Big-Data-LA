@@ -207,12 +207,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceRightToLeft" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbk-tE-1E4">
-                                <rect key="frame" x="20" y="135" width="335" height="50"/>
+                                <rect key="frame" x="153" y="143" width="70" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="gyT-Vi-28N"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Button" image="map">
+                                <state key="normal" title="Location">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
@@ -428,7 +427,6 @@
         <image name="about" width="50" height="50"/>
         <image name="back-button" width="25" height="41"/>
         <image name="dummy-image" width="298" height="282"/>
-        <image name="map" width="50" height="50"/>
         <image name="talks" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
