@@ -80,7 +80,7 @@ class TalkLocationViewController: UIViewController, CLLocationManagerDelegate {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         
         let newDistance = CLLocation(latitude: locValue.latitude, longitude: locValue.longitude).distanceFromLocation(CLLocation(latitude: self.lat, longitude: self.long))
-        let region = MKCoordinateRegionMakeWithDistance(locValue,2 * newDistance, 2 * newDistance)
+        let region = MKCoordinateRegionMakeWithDistance(locValue,3 * newDistance, 3 * newDistance)
         let adjustRegion = self.mapView.regionThatFits(region)
         self.mapView.setRegion(adjustRegion, animated:true)
         

@@ -56,11 +56,6 @@ class API{
                             }
                             
                         }
-                        
-//                        talk["name"] = object["name"].stringValue
-//                        talk["location"] = object["location"].stringValue
-//                        talk["time"] = object["time"].stringValue
-//                        talk["about"] = object["about"].stringValue
                     }
                     API.talk = talk
                 }
