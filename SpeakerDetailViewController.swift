@@ -17,6 +17,10 @@ class SpeakerDetailViewController: UIViewController {
     @IBOutlet weak var speakerAbout: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationBar.topItem?.title = self.speaker["name"]
+        speakerName.text = self.speaker["name"]
+        speakerTitle.text = self.speaker["title"]
+        speakerAbout.text = self.speaker["about"]
         
     }
     
@@ -25,11 +29,12 @@ class SpeakerDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        speakerAbout.setContentOffset(CGPointZero, animated: false)
+    }
+    
     override func viewDidAppear(animated: Bool) {
-        navigationBar.topItem?.title = self.speaker["name"]
-        speakerName.text = self.speaker["name"]
-        speakerTitle.text = self.speaker["title"]
-        speakerAbout.text = self.speaker["about"]
         speakerAbout.scrollRangeToVisible(NSMakeRange(0, 0))
     }
 }
