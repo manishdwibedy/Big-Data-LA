@@ -47,7 +47,16 @@ class API{
                     let talkArray = JSON(talkJSON)["talk"]
                     
                     for (key, value) in talkArray {
-                        talk[key] = value.stringValue
+                        if key != "latlong"{
+                            talk[key] = value.stringValue
+                        }
+                        else{
+                            for (locationKey, locationValue) in value{
+                                talk[locationKey] = locationValue.stringValue
+                            }
+                            
+                        }
+                        
 //                        talk["name"] = object["name"].stringValue
 //                        talk["location"] = object["location"].stringValue
 //                        talk["time"] = object["time"].stringValue

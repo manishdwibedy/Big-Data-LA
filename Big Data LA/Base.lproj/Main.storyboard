@@ -284,6 +284,9 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BY2-Ng-cEl">
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -294,6 +297,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="mapView" destination="BY2-Ng-cEl" id="lE9-9X-bme"/>
                         <outlet property="navigationBar" destination="FWJ-2O-Oug" id="Uor-SH-yCg"/>
                     </connections>
                 </viewController>

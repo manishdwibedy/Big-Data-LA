@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import MapKit
 
 class TalkLocationViewController: UIViewController {
 
+    @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var navigationBar: UINavigationBar!
     var talk = [String:String]()
     
