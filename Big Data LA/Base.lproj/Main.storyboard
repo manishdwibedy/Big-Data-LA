@@ -457,14 +457,16 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="7tm-nU-z0w">
                                 <rect key="frame" x="-4" y="92" width="383" height="575"/>
                             </mapView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bFr-oK-5mn">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bFr-oK-5mn" userLabel="First, Second, Third">
                                 <rect key="frame" x="-4" y="64" width="383" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="8cx-kd-acj"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="All"/>
+                                    <segment title="Parking"/>
+                                    <segment title="Washroom"/>
+                                    <segment title="Misc."/>
                                 </segments>
                             </segmentedControl>
                         </subviews>
