@@ -468,6 +468,9 @@
                                     <segment title="Washroom"/>
                                     <segment title="Misc."/>
                                 </segments>
+                                <connections>
+                                    <action selector="valueChanged:" destination="YMz-yt-lan" eventType="valueChanged" id="DcT-dB-xbf"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

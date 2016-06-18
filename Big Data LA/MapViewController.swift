@@ -16,6 +16,21 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     let corelocationManager = CLLocationManager()
     let locationManager: LocationManager = LocationManager.sharedInstance
     
+    @IBAction func valueChanged(sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex
+        {
+        case 0:
+            print("All")
+        case 1:
+            print("Parking")
+        case 2:
+            print("Washroom")
+        case 3:
+            print("Misc")
+        default:
+            print("Error")
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
