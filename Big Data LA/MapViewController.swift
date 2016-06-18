@@ -69,7 +69,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         corelocationManager.delegate = self
         let authCode = CLLocationManager.authorizationStatus()
         
-        if authCode == CLAuthorizationStatus.NotDetermined && corelocationManager.respondsToSelector("requestAlwaysAuthorization") || corelocationManager.respondsToSelector("requestWhenInUseAuthorization"){
+        if authCode == CLAuthorizationStatus.NotDetermined && corelocationManager.respondsToSelector(#selector(CLLocationManager.requestAlwaysAuthorization)) || corelocationManager.respondsToSelector(#selector(CLLocationManager.requestWhenInUseAuthorization)){
             if(NSBundle.mainBundle().objectForInfoDictionaryKey("NSLocationAlwaysUsageDescription") != nil){
                 corelocationManager.requestAlwaysAuthorization()
             }
@@ -103,7 +103,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
     }
     
-    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status != CLAuthorizationStatus.NotDetermined || status != CLAuthorizationStatus.Denied || status != CLAuthorizationStatus.Restricted{
             getLocation()
         }
