@@ -455,18 +455,31 @@
                                 </items>
                             </navigationBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="7tm-nU-z0w">
-                                <rect key="frame" x="-4" y="114" width="383" height="553"/>
+                                <rect key="frame" x="-4" y="92" width="383" height="575"/>
                             </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bFr-oK-5mn">
+                                <rect key="frame" x="0.0" y="64" width="375" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="8cx-kd-acj"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ya2-IH-zLM" firstAttribute="top" secondItem="7tm-nU-z0w" secondAttribute="bottom" id="7Nt-GJ-9Sg"/>
                             <constraint firstItem="QRq-kN-zYP" firstAttribute="top" secondItem="Qkv-l5-cAR" secondAttribute="bottom" id="7qd-M3-tMA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QRq-kN-zYP" secondAttribute="trailing" constant="-20" id="ApY-Qr-5Wn"/>
-                            <constraint firstItem="7tm-nU-z0w" firstAttribute="top" secondItem="QRq-kN-zYP" secondAttribute="bottom" constant="50" id="Bjp-L7-APG"/>
+                            <constraint firstItem="7tm-nU-z0w" firstAttribute="top" secondItem="QRq-kN-zYP" secondAttribute="bottom" constant="28" id="Bjp-L7-APG"/>
+                            <constraint firstItem="bFr-oK-5mn" firstAttribute="top" secondItem="QRq-kN-zYP" secondAttribute="bottom" id="LAR-cB-WMF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7tm-nU-z0w" secondAttribute="trailing" constant="-20" id="MK2-LE-T2C"/>
+                            <constraint firstItem="bFr-oK-5mn" firstAttribute="leading" secondItem="HWg-nP-aaB" secondAttribute="leadingMargin" constant="-20" id="Vhw-Ur-GU7"/>
                             <constraint firstItem="7tm-nU-z0w" firstAttribute="leading" secondItem="HWg-nP-aaB" secondAttribute="leadingMargin" constant="-20" id="pn7-NI-ZCt"/>
                             <constraint firstItem="QRq-kN-zYP" firstAttribute="leading" secondItem="HWg-nP-aaB" secondAttribute="leadingMargin" constant="-20" id="qf4-fg-mvb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bFr-oK-5mn" secondAttribute="trailing" constant="-20" id="rR5-9F-ZEr"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
