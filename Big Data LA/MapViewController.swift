@@ -17,17 +17,33 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager: LocationManager = LocationManager.sharedInstance
     var annotations = [[String:String]]()
     
+    var parkingAnnotations = [MKPointAnnotation]()
+    var washroomAnnotations = [MKPointAnnotation]()
+    var classesAnnotation = [MKPointAnnotation]()
+    
     @IBAction func valueChanged(sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex
         {
         case 0:
             print("All")
+            mapView.addAnnotations(parkingAnnotations)
+            mapView.addAnnotations(washroomAnnotations)
+            mapView.addAnnotations(classesAnnotation)
         case 1:
             print("Parking")
+            mapView.addAnnotations(parkingAnnotations)
+            mapView.removeAnnotations( washroomAnnotations )
+            mapView.removeAnnotations( classesAnnotation )
         case 2:
             print("Washroom")
+            mapView.addAnnotations(washroomAnnotations)
+            mapView.removeAnnotations( parkingAnnotations )
+            mapView.removeAnnotations( classesAnnotation )
         case 3:
             print("Misc")
+            mapView.addAnnotations(classesAnnotation)
+            mapView.removeAnnotations( washroomAnnotations )
+            mapView.removeAnnotations( parkingAnnotations )
         default:
             print("Error")
         }
@@ -104,6 +120,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 annotation.title = annotationData["name"]
                 annotation.subtitle = annotationData["description"]
                 mapView.addAnnotation(annotation)
+                
+                switch(type){
+                    case "washroom":
+                        washroomAnnotations.append(annotation)
+                    case "class":
+                        classesAnnotation.append(annotation)
+                    case "parking":
+                        parkingAnnotations.append(annotation)
+                    default:
+                        print("Found!\(type)")
+                }
             }
             
             if annotationData["category"] == "event"{
