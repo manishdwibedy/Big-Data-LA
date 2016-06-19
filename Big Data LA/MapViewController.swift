@@ -40,6 +40,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         self.addAnnotation("event")
         self.addAnnotation("parking")
         self.addAnnotation("washroom")
+        self.addAnnotation("class")
 
         //
         corelocationManager.delegate = self
