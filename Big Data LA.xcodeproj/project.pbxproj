@@ -147,14 +147,14 @@
 			isa = PBXGroup;
 			children = (
 				5B66AE4F1CF04883002E261B /* AppDelegate.swift */,
-				5B66AE511CF04883002E261B /* ViewController.swift */,
 				5B66AE531CF04883002E261B /* Main.storyboard */,
-				5BEAB0AA1D124E570094BEB4 /* TalkLocationViewController.swift */,
 				5B66AE591CF04883002E261B /* Assets.xcassets */,
 				5B66AE5B1CF04883002E261B /* LaunchScreen.storyboard */,
 				5BF09D081D12375F00D45601 /* LocationManager.swift */,
 				5B66AE5E1CF04883002E261B /* Info.plist */,
 				5B66AE561CF04883002E261B /* Big_Data_LA.xcdatamodeld */,
+				5B66AE511CF04883002E261B /* ViewController.swift */,
+				5BEAB0AA1D124E570094BEB4 /* TalkLocationViewController.swift */,
 				5BFC940C1CF4D68D00C2DDBF /* MapViewController.swift */,
 				5BAB62C71D0BA236004B4088 /* SpeakerDetailViewController.swift */,
 				5BAB62BF1D0B4179004B4088 /* SpeakersViewController.swift */,

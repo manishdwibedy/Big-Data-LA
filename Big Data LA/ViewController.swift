@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print(API.getSpeaker())
         // Do any additional setup after loading the view, typically from a nib.
+        
+        API.getAnnotations()
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +26,6 @@ class ViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "showMap") {
             let mapViewController = segue.destinationViewController as? MapViewController
-            API.getAnnotations()
             mapViewController!.annotations = API.annotations
             
         }

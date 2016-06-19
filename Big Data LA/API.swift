@@ -67,6 +67,8 @@ class API{
     static func getAnnotations(){
         let URL = API_CONSTANTS.getAnnotationURL()
         
+        self.annotations = [[String:String]]()
+        
         Alamofire.request(.GET, URL).responseJSON {
             response in
             if let annotationsJSON = response.result.value {
@@ -83,6 +85,7 @@ class API{
                         "category" : object["category"].stringValue
                     ]
                     API.annotations.append(annotation)
+                    print(annotation)
                 }
             }
         }
