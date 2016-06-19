@@ -18,12 +18,12 @@ class API{
     static func getSpeaker(){
         let URL = API_CONSTANTS.getSpeakerURL()
         
-        
         Alamofire.request(.GET, URL).responseJSON {
             response in
                 if let speakersJSON = response.result.value {
                     let speakersArray = JSON(speakersJSON)
                     
+                    self.speakers = [[String:String]]()
                     
                     for (_, object) in speakersArray {
                         let speaker: [String:String] = [
