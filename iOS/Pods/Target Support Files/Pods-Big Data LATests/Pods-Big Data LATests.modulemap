@@ -1,0 +1,6 @@
+framework module Pods_Big_Data_LATests {
+  umbrella header "Pods-Big Data LATests-umbrella.h"
+
+  export *
+  module * { export * }
+}
