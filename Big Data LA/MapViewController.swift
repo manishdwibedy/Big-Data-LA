@@ -37,26 +37,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 
         // Do any additional setup after loading the view.
         
-        // Setting the location
-        let location = CLLocationCoordinate2D(
-            latitude: 34.004281,
-            longitude: -118.386846
-        )
-        
-        // Setting the region
-        let span = MKCoordinateSpanMake(0.01, 0.01)
-        let region = MKCoordinateRegion(center: location, span: span)
-        
-        // Assigning the region to the mapView
-        mapView.setRegion(region, animated: true)
-        
-        // Adding an annotation
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = location
-        annotation.title = "Big Data LA 2016"
-        annotation.subtitle = "West LA College"
-        mapView.addAnnotation(annotation)
-        
+        self.addAnnotation("event")
         self.addAnnotation("parking")
 
         //
@@ -122,6 +103,25 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 annotation.subtitle = annotationData["description"]
                 mapView.addAnnotation(annotation)
             }
+            
+            if annotationData["category"] == "event"{
+                let lat = Double(annotationData["lat"]!)
+                let long = Double(annotationData["long"]!)
+                
+                let location = CLLocationCoordinate2D(
+                    latitude: lat!,
+                    longitude: long!
+                )
+                
+                // Setting the region
+                let span = MKCoordinateSpanMake(0.01, 0.01)
+                let region = MKCoordinateRegion(center: location, span: span)
+                
+                // Assigning the region to the mapView
+                mapView.setRegion(region, animated: true)
+                
+            }
+            
         }
         
         
