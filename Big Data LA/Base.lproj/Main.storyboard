@@ -34,7 +34,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="328" height="252"/>
                                         <state key="normal" title="Map"/>
                                         <connections>
-                                            <segue destination="YMz-yt-lan" kind="show" id="zGr-QQ-nxD"/>
+                                            <segue destination="YMz-yt-lan" kind="show" identifier="showMap" id="zGr-QQ-nxD"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hx6-SO-LGt">

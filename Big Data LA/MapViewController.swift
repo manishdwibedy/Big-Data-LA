@@ -15,6 +15,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var mapView: MKMapView!
     let corelocationManager = CLLocationManager()
     let locationManager: LocationManager = LocationManager.sharedInstance
+    var annotations = [[String:String]]()
     
     @IBAction func valueChanged(sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex
@@ -35,8 +36,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        let annotations = API.getAnnotations()
         
         // Setting the location
         let location = CLLocationCoordinate2D(
