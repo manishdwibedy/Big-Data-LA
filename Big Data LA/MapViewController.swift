@@ -39,6 +39,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         self.addAnnotation("event")
         self.addAnnotation("parking")
+        self.addAnnotation("washroom")
 
         //
         corelocationManager.delegate = self
@@ -61,7 +62,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         self.mapView.showsUserLocation = true
 
         locationManager.startUpdatingLocationWithCompletionHandler { (latitude, longitude, status, verboseMessage, error) in
-            
+            print(latitude)
         }
         
     }
