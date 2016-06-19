@@ -57,15 +57,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         annotation.subtitle = "West LA College"
         mapView.addAnnotation(annotation)
         
-        let parking = MKPointAnnotation()
-        parking.coordinate = CLLocationCoordinate2D(
-            latitude: 34.002299,
-            longitude: -118.386121
-        )
-        parking.title = "Parking"
-        parking.subtitle = "Dummy"
-        mapView.addAnnotation(parking)
-        
+        self.addAnnotation("parking")
+
         //
         corelocationManager.delegate = self
         let authCode = CLLocationManager.authorizationStatus()
@@ -115,6 +108,25 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    func addAnnotation(type: String){
+        for annotationData in self.annotations {
+            if annotationData["category"] == type{
+                let lat = Double(annotationData["lat"]!)
+                let long = Double(annotationData["long"]!)
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = CLLocationCoordinate2D(
+                    latitude: lat!,
+                    longitude: long!
+                )
+                annotation.title = annotationData["name"]
+                annotation.subtitle = annotationData["description"]
+                mapView.addAnnotation(annotation)
+            }
+        }
+        
+        
+
+    }
 
     /*
     // MARK: - Navigation
