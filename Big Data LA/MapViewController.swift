@@ -53,6 +53,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 
         // Do any additional setup after loading the view.
         
+        print("Found \(self.annotations.count) annotations")
         self.addAnnotation("event")
         self.addAnnotation("parking")
         self.addAnnotation("washroom")

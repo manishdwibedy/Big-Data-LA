@@ -85,7 +85,6 @@ class API{
                         "category" : object["category"].stringValue
                     ]
                     API.annotations.append(annotation)
-                    print(annotation)
                 }
             }
         }
