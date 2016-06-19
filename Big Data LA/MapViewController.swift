@@ -36,6 +36,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 
         // Do any additional setup after loading the view.
         
+        let annotations = API.getAnnotations()
+        
         // Setting the location
         let location = CLLocationCoordinate2D(
             latitude: 34.004281,

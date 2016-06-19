@@ -13,6 +13,8 @@ import SwiftyJSON
 class API{
     static var speakers = [[String:String]]()
     static var talk = [String: String]()
+    static var annotations = [[String:String]]()
+    
     static func getSpeaker(){
         let URL = API_CONSTANTS.getSpeakerURL()
         
@@ -61,4 +63,29 @@ class API{
                 }
         }
     }
+    
+    static func getAnnotations(){
+        let URL = API_CONSTANTS.getAnnotationURL()
+        
+        Alamofire.request(.GET, URL).responseJSON {
+            response in
+            if let annotationsJSON = response.result.value {
+                let annotationsArray = JSON(annotationsJSON)
+                
+                
+                for (_, object) in annotationsArray {
+                    let annotation: [String:String] = [
+                        "id": object["_id"]["$oid"].stringValue,
+                        "name" : object["name"].stringValue,
+                        "description" : object["description"].stringValue,
+                        "lat" : object["lat"].stringValue,
+                        "long" : object["long"].stringValue,
+                        "category" : object["category"].stringValue
+                    ]
+                    API.annotations.append(annotation)
+                }
+            }
+        }
+    }
+
 }
