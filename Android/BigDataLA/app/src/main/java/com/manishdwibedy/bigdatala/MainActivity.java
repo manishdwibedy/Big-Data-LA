@@ -1,5 +1,6 @@
 package com.manishdwibedy.bigdatala;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -42,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void openTalks(View view){
         System.out.print("Hii");
-        Log.d("MainActivity","HI");
+        Log.d("MainActivity", "HI");
+        Intent intent = new Intent(this, TalksActivity.class);
+        startActivity(intent);
     }
 }
